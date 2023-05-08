@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaparral - Products</title>
+    <script src="script.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">	
+<link rel="stylesheet" href="product-styles.css">	
+
+ <!-- Link to font files located in a subfolder named "fonts" -->
+
+ <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="d-flex flex-nowrap w-100 justify-content-between align-items-center">
+      <a class="navbar-brand" href="index.html"><img src="chaparral-logo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="about-us.html">ABOUT</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="products.html">PRODUCTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="resources.html">RESOURCES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+</head>
+<body>
+  <section name="landing">
+        <div class="container-fluid d-flex align-items-center products-bg" >
+            <div class="container tab-content max-container">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                    <div class="row container-padding">
+                      <div class="col-md-12 d-flex flex-column align-items-center">
+                          <h2 class="text-black text-center display-4 poppins">Contemporary Closet Doors</h2>
+                          <br>
+                          <p class="col-md-8 text-center">
+                              The combination of wide solid wood frame and mirror, polar white or opaque white laminate glass adds a contemporary and urban flare to a home. Its simple yet elegant design makes these doors a popular choice in today’s residential build.
+                          </p>           
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="row container-padding">
+                      <div class="col-md-12 d-flex flex-column align-items-center">
+                          <h2 class="text-black text-center display-4 poppins">Traditional Sliding Closet Doors</h2>
+                          <br>
+                          <p class="col-md-8 text-center">
+                              Commercial grade rust resistant aluminum and steel framed doors provide functionality and beauty to any room. Category II, safety backed mirror ensures high quality mirror images without distortion.
+                          </p>           
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="row container-padding">
+                      <div class="col-md-12 d-flex flex-column align-items-center">
+                          <h2 class="text-black text-center display-4 poppins">Framed Wall Mirrors</h2>
+                          <br>
+                          <p class="col-md-8 text-center">
+                            Our custom framed wall mirrors are not only designed as vanity mirrors but decorative mirrors for all areas in a home. They add the perfect touch to any interior providing the perfect balance of functionality and aesthetics.
+                          </p>           
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="row container-padding">
+                      <div class="col-md-12 d-flex flex-column align-items-center">
+                          <h2 class="text-black text-center display-4 poppins">Cut-to-Size Mirrors</h2>
+                          <br>
+                          <p class="col-md-8 text-center">
+                              Our cut-to-size mirror program provides a wide range of mirror sizes. Commonly used as vanity mirrors, these mirrors come with various edgework options. We offer custom sizes.
+                          </p>           
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
+            </div> 
+        </div>
+  </section>
+    
+<section name="products">
+    <div class="container-fluid d-flex align-items-center container-padding">
+        <div class="container max-container">
+            
+            <ul class="d-flex justify-content-around nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item pb-3" role="presentation">
+                  <button class="nav-link product-tab active" id="contemporary-tab" data-bs-toggle="pill" data-bs-target="#contemporary" type="button" role="tab" aria-controls="contemporary" aria-selected="true">Contemporary Sliding Closet Doors</button>
+                </li>
+                <li class="nav-item pb-3" role="presentation">
+                  <button class="nav-link product-tab" id="traditional-tab" data-bs-toggle="pill" data-bs-target="#traditional" type="button" role="tab" aria-controls="traditional" aria-selected="false">Traditional Sliding Closet Doors</button>
+                </li>
+                <li class="nav-item pb-3" role="presentation">
+                  <button class="nav-link product-tab" id="framed-walls-tab" data-bs-toggle="pill" data-bs-target="#framed-walls" type="button" role="tab" aria-controls="framed-walls" aria-selected="false">Framed Walled Mirrors</button>
+                </li>
+                <li class="nav-item pb-3" role="presentation">
+                    <button class="nav-link product-tab" id="cut-to-size-tab" data-bs-toggle="pill" data-bs-target="#cut-to-size" type="button" role="tab" aria-controls="cut-to-size" aria-selected="false">Cut-to-Size Mirrors</button>
+                  </li>
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="contemporary" role="tabpanel" aria-labelledby="contemporary-tab">
+                    <div class="col-md-12 d-flex browse-column">
+                        <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                          <div class="products-width">
+                            <div class="contemporary-1 browse-image-padding print"></div>  
+                            <h5 class="color3 mb-0 py-3"><b>700 Series Wide Framed Wood Mirror Black</b></h5>
+                            <div id="product-options">
+                              <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/contemporary/700 Series Wide Framed Wood Mirror _ Black.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                                <span class="material-icons-outlined">
+                                  print
+                                </span></button></a>
+                              <a href="products-img/contemporary/700 Series Wide Framed Wood Mirror _ Black.jpg" download="" class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn">
+                                <span class="material-icons-outlined">
+                                  file_download
+                                </span></button></a>
+                            </div>              
+                          </div>
+                        </div>
+        
+                        <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                          <div class="products-width">
+                            <div class="contemporary-2 browse-image-padding"></div>  
+                            <h5 class="color3 mb-0 py-3"><b>700 Series Wide Framed Wood Mirror White</b></h5>
+                            <div id="product-options">
+                              <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/contemporary/700 Series Wide Framed Wood Mirror _ White2.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                                <span class="material-icons-outlined">
+                                  print
+                                  </span></button></a>
+                              <a href="products-img/contemporary/700 Series Wide Framed Wood Mirror _ White2.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                                  file_download
+                                  </span></button></a>
+                            </div>              
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 d-flex browse-column">
+                        <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                          <div class="products-width">
+                            <div class="contemporary-3 browse-image-padding"></div>  
+                            <h5 class="color3 mb-0 py-3"><b>700 Series Chario Grigio Opaque White Laminate 2 Panel</b></h5>
+                            <div id="product-options">
+                              <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/contemporary/CHARIO GRIGIO 700 Series Opaque White Laminate 2 Panel.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                                <span class="material-icons-outlined">
+                                  print
+                                  </span></button></a>
+                              <a href="products-img/contemporary/CHARIO GRIGIO 700 Series Opaque White Laminate 2 Panel.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                                  file_download
+                                  </span></button></a>
+                            </div>              
+                          </div>
+                        </div>
+        
+                        <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                          <div class="products-width">
+                            <div class="contemporary-4 browse-image-padding"></div>  
+                            <h5 class="color3 mb-0 py-3"><b>700 Series Chario Grigio Mirror 2-Panel 3-Lite</b></h5>
+                            <div id="product-options">
+                              <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/contemporary/CHARIO GRIGIO_MIRROR_2 PANEL_3 LITE_INUSE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                                <span class="material-icons-outlined">
+                                  print
+                                  </span></button></a>
+                              <a href="products-img/contemporary/CHARIO GRIGIO_MIRROR_2 PANEL_3 LITE_INUSE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                                  file_download
+                                  </span></button></a>
+                            </div>              
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 d-flex browse-column">
+                        <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                          <div class="products-width">
+                            <div class="contemporary-5 browse-image-padding print"></div>  
+                            <h5 class="color3 mb-0 py-3"><b>700 Series Chario Grigio Mirror 2-Panel</b></h5>
+                            <div id="product-options">
+                              <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/contemporary/CHARIO GRIGIO_MIRROR_2 PANEL_IN USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                                <span class="material-icons-outlined">
+                                  print
+                                  </span></button></a>
+                              <a href="products-img/contemporary/CHARIO GRIGIO_MIRROR_2 PANEL_IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                                  file_download
+                                  </span></button></a>
+                            </div>              
+                          </div>
+                        </div>
+        
+                        <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                          <div class="products-width">
+                            <div class="contemporary-6 browse-image-padding print"></div>  
+                            <h5 class="color3 mb-0 py-3"><b>700 Series Chario Grigio Polar White 2-Panel 3-Lite</b></h5>
+                            <div id="product-options">
+                              <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/contemporary/CHARIO\ GRIGIO_POLAR\ WHITE_2\ PANEL_3\ LITE_INUSE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                                <span class="material-icons-outlined">
+                                  print
+                                  </span></button></a>
+                              <a href="products-img/contemporary/CHARIO\ GRIGIO_POLAR\ WHITE_2\ PANEL_3\ LITE_INUSE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                                  file_download
+                                  </span></button></a>
+                            </div>              
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 d-flex browse-column">
+                        <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                          <div class="products-width">
+                            <div class="contemporary-7 browse-image-padding print"></div>  
+                            <h5 class="color3 mb-0 py-3"><b>700 Series Chario Grigio White Lami 2-Panel 3-Lite</b></h5>
+                            <div id="product-options">
+                              <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/contemporary/CHARIO\ GRIGIO_WHITE\ LAMI_2\ PANEL_3\ LITE_IN\ USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                                <span class="material-icons-outlined">
+                                  print
+                                  </span></button></a>
+                              <a href="products-img/contemporary/CHARIO\ GRIGIO_WHITE\ LAMI_2\ PANEL_3\ LITE_IN\ USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                                  file_download
+                                  </span></button></a>
+                            </div>              
+                          </div>
+                        </div>
+        
+                        <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                          <div class="products-width">
+                            <div class="contemporary-8 browse-image-padding print"></div>  
+                            <h5 class="color3 mb-0 py-3"><b>700 Series Garden Teak 2-Panel Mirror</b></h5>
+                            <div id="product-options">
+                              <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/contemporary/GARDEN\ TEAK_2\ PANEL_MIRROR_\ IN\ USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                                <span class="material-icons-outlined">
+                                  print
+                                  </span></button></a>
+                              <a href="products-img/contemporary/GARDEN\ TEAK_2\ PANEL_MIRROR_\ IN\ USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                                  file_download
+                                  </span></button></a>
+                            </div>              
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 d-flex browse-column">
+                        <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                          <div class="products-width">
+                            <div class="contemporary-9 browse-image-padding print"></div>  
+                            <h5 class="color3 mb-0 py-3"><b>Garden Teak 2 Panel Polar White 3 Lite In-Use</b></h5>
+                            <div id="product-options">
+                              <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/contemporary/GARDEN\ TEAK_2\ PANEL_POLAR\ WHITE_3\ LITE_IN\ USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                                <span class="material-icons-outlined">
+                                  print
+                                  </span></button></a>
+                              <a href="products-img/contemporary/GARDEN\ TEAK_2\ PANEL_POLAR\ WHITE_3\ LITE_IN\ USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                                  file_download
+                                  </span></button></a>
+                            </div>              
+                          </div>
+                        </div>
+        
+                        <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                          <div class="products-width">
+                            <div class="contemporary-10 browse-image-padding print"></div>  
+                            <h5 class="color3 mb-0 py-3"><b>Garden Teak 2 Panel Polar White In-Use</b></h5>
+                            <div id="product-options">
+                              <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/contemporary/GARDEN\ TEAK_2\ PANEL_POLAR\ WHITE_IN\ USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                                <span class="material-icons-outlined">
+                                  print
+                                  </span></button></a>
+                              <a href="products-img/contemporary/GARDEN\ TEAK_2\ PANEL_POLAR\ WHITE_IN\ USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                                  file_download
+                                  </span></button></a>
+                            </div>              
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="tab-pane fade" id="traditional" role="tabpanel" aria-labelledby="traditional-tab">
+                  <div class="col-md-12 d-flex browse-column">
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="trad-650 browse-image-padding print"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>650 SERIES | Wide Aluminum Framed</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/traditional/650 Series.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/traditional/650 Series.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="trad-550 browse-image-padding"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>550 Series | Narrow Framed Aluminum</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/traditional/550 SERIES.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/traditional/550 SERIES.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 d-flex browse-column">
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="trad-150 browse-image-padding print"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>150 | Frameless Aluminum</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/traditional/150 SERIES.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/traditional/150 SERIES.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>  
+    
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="trad-100 browse-image-padding"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>100 SERIES | Frameless Steel</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/traditional/100 SERIES.png'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/traditional/100 SERIES.png" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 d-flex browse-column">
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="trad-555 browse-image-padding print"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>555 SERIES | Aluminum Framed Flush Panel</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/traditional/555 series.png'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/traditional/555 series.png" download  class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="trad-505 browse-image-padding"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>505 SERIES | Flush Panel Steel Framed</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/traditional/505 SERIES.png'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/traditional/505 SERIES.png" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>      
+                  </div>
+
+                  <div class="col-md-12 d-flex browse-column">
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="trad-250C browse-image-padding print"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>250-C SERIES | Raised Panel Steel Frame</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/traditional/250C SERIES.png'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/traditional/250C SERIES.png" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+    
+                      
+                  </div>
+
+                </div>
+                <div class="tab-pane fade" id="framed-walls" role="tabpanel" aria-labelledby="framed-walls-tab">
+
+                  <div class="col-md-12 d-flex browse-column">
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="arqadia-bright-silver browse-image-padding print"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>ARQADIA BRIGHT SILVER</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="academie-silver browse-image-padding"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>ACADEMIE SILVER</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/framed-wall-mirrors/ACADEMIE SILVER.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/framed-wall-mirrors/ACADEMIE SILVER.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 d-flex browse-column">
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="ferrosa-pewter-2 browse-image-padding print"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>FERROSA PEWTER 2</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/framed-wall-mirrors/FERROSA PEWTER 2.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/framed-wall-mirrors/FERROSA PEWTER 2.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="arqadia-bright-silver-1 browse-image-padding"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>ARQADIA BRIGHT SILVER 1</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 1.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 1.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+                  </div>  
+
+                  <div class="col-md-12 d-flex browse-column">
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="arqadia-bright-silver-2 browse-image-padding print"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>ARQADIA BRIGHT SILVER 2"</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 2.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 2.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="framerica-stainless-flat browse-image-padding"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>FRAMERICA STAINLESS FLAT</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/framed-wall-mirrors/FRAMERICA STAINLESS WHITE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/framed-wall-mirrors/FRAMERICA STAINLESS WHITE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 d-flex browse-column">
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="gramercy-silver browse-image-padding print"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>GRAMERCY SILVER</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/framed-wall-mirrors/GRAMERCY SILVER.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/framed-wall-mirrors/GRAMERCY SILVER.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="arqadia-bright-silver-2-3 browse-image-padding"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>ARQADIA BRIGHT SILVER 2-3"/4"</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 2-3_4.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 2-3_4.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 d-flex browse-column">
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="arqadia-warm-silver browse-image-padding print"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>ARQADIA WARM SILVER</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/framed-wall-mirrors/ARQADIA WARM SILVER.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/framed-wall-mirrors/ARQADIA WARM SILVER.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="arqadia-black-2 browse-image-padding"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>ARQADIA BLACK 2</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/framed-wall-mirrors/ARQADIA BLACK 2.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/framed-wall-mirrors/ARQADIA BLACK 2.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 d-flex browse-column">
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="products-width">
+                        <div class="white-white browse-image-padding print"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>WHITE WHITE</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/framed-wall-mirrors/WHITE\ WHITE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/framed-wall-mirrors/WHITE\ WHITE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+    
+                  </div>
+
+                </div>
+                <div class="tab-pane fade" id="cut-to-size" role="tabpanel" aria-labelledby="cut-to-size-tab">
+                  <div class="col-md-12 d-flex browse-column">
+                    <div class="col-md-12 mt-3 d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="cut-to-size-width">
+                        <div class="cut-to-size browse-image-padding print"></div>  
+                        <h5 class="color3 mb-0 py-3"><b>CUT-TO-SIZE</b></h5>
+                        <div id="product-options">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('products-img/cut-to-size/cut-to-size.png'); return false;" class="btn btn-primary pb-0 options-btn">
+                            <span class="material-icons-outlined">
+                              print
+                              </span></button></a>
+                          <a href="products-img/cut-to-size/cut-to-size.png" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                              file_download
+                              </span></button></a>
+                        </div>              
+                      </div>
+                    </div>
+    
+                    
+                  </div>
+                </div>
+              </div>
+          </div> 
+    </div>
+</section>
+
+
+<footer>
+    <section name="footer">
+    <div class="container-fluid justify-content-around container-padding footer-bg">   
+          <div class="row w-100">
+            <div class="col-md-4">
+               <p class="text-white p-pad-1">
+                Chaparral Doors <br>
+                501 Kettering Drive <br>
+                Ontario, California 91761 <br>
+                 <br><br>
+                Copyright © 2023 
+               </p>
+            </div>
+
+            <div class="col-md-4 footer-container-border">
+              <p class="text-white p-pad-1">
+                1 888 244 1734
+                <br><br>
+                orderdesk@chaparraldoors.com
+                <br><br>
+                www.chaparraldoors.com
+              </p>
+           </div>
+
+           <div class="col-md-4 footer-container-border">
+            <p class="text-white p-pad-1">
+              Privacy Policy
+              <br><br>
+              Terms and Conditions 
+            </p>
+         </div>
+          </div>
+        
+    </div>
+        
+  </section>
+    </footer>
+<!-- jQuery -->
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+<!-- Your JavaScript file -->
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>    
+</body>
+</html>
