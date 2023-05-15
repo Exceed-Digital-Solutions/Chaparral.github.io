@@ -20,8 +20,7 @@
 .products-width{
     padding: 1em;
     width:100%;
-    max-width:500px;
-    min-width:300px;
+    
     background-color: white;
     transition: all 0.5s ease;
     border: #E3E3E3 solid 1px;
@@ -29,7 +28,7 @@
 
 .cut-to-size-width{
     padding: 1em;
-    width:50%;
+    width:100%;
     max-width:none;
     min-width:300px;
     background-color: white;
@@ -42,17 +41,28 @@
     transform: scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
 }   
-.products-width>#product-options, .cut-to-size-width>#product-options{
+/*.products-width>#product-options, .cut-to-size-width>#product-options{
     display:none;
-}  
-
+}  */
+#product-options{
+  display:flex;
+  justify-content: end;
+}
 .products-width:hover>#product-options, .cut-to-size-width:hover>#product-options{
     display:flex;
-    justify-content: end;
-    align-items: center;
+    justify-content: flex-end;
+    
 }  
  
+.product-height{
+  height: 700px;
+}
 
+@media screen and (max-width: 767px){
+  .product-height{
+    height: 300px;
+  }
+}
 .options-btn{
   border:none;
   background-color: #f1f1f1;
@@ -71,7 +81,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
   
 }
 
@@ -81,7 +91,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
   
 }
 
@@ -91,7 +101,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .contemporary-4{
@@ -100,7 +110,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .contemporary-5{
@@ -109,7 +119,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .contemporary-6{
@@ -118,7 +128,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .contemporary-7{
@@ -127,7 +137,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .contemporary-8{
@@ -136,7 +146,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .contemporary-9{
@@ -145,7 +155,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .contemporary-10{
@@ -154,7 +164,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .contemporary-11{
@@ -163,7 +173,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .contemporary-12{
@@ -172,7 +182,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .contemporary-13{
@@ -181,7 +191,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .contemporary-14{
@@ -190,7 +200,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 /*TRADITIONAL*/
@@ -200,7 +210,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .trad-150{
@@ -209,7 +219,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .trad-250{
@@ -218,7 +228,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .trad-250C{
@@ -227,7 +237,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .trad-500{
@@ -236,7 +246,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .trad-505{
@@ -245,7 +255,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .trad-550{
@@ -254,7 +264,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .trad-555{
@@ -263,7 +273,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 .trad-650{
@@ -272,7 +282,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  
 }
 
 /*FRAMED WALLS*/
@@ -282,7 +292,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 400px;
+    
     
   }
   
@@ -292,7 +302,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 400px;
+    
   }
   
 .ferrosa-pewter-2{
@@ -301,7 +311,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 400px;
+    
   }
   
 .arqadia-bright-silver-1{
@@ -310,7 +320,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 400px;
+    
   }
   
   .arqadia-bright-silver-2{
@@ -319,7 +329,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 400px;
+    
   }
   
   .framerica-stainless-flat{
@@ -328,7 +338,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 400px;
+    
   }
   
   .gramercy-silver{
@@ -337,7 +347,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 400px;
+    
   }
 
   .arqadia-bright-silver-2-3{
@@ -346,7 +356,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 400px;
+    
   }
 
   .arqadia-warm-silver{
@@ -355,7 +365,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 400px;
+    
   }
 
   .arqadia-black-2{
@@ -364,7 +374,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 400px;
+    
   }
 
   .white-white{
@@ -373,7 +383,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 400px;
+    
   }
 /*CUT-TO-SIZE*/
 .cut-to-size{
@@ -382,5 +392,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 400px;
+  height: 700px;
 }  
+@media screen and (max-width: 767px){
+  .cut-to-size{    
+    height: 300px;
+  }
+}
