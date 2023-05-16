@@ -274,7 +274,7 @@ ul.navbar-nav{
 
 
 .landing-bg {
-    background-image: url('/home-images/landing-bg.png');
+    background-image: url('/Images/home-images/landing-bg.png');
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
@@ -284,7 +284,7 @@ ul.navbar-nav{
   }
 
   .landing-bg-2{
-    background-image: url('/home-images/landing-bg-2.png');
+    background-image: url('/Images/home-images/landing-bg-2.png');
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
@@ -293,7 +293,7 @@ ul.navbar-nav{
     height: auto;
   }  
 .about-us-bg{
-    background-image: url('/about-us-img/about-us-bg.png');
+    background-image: url('/Images/about-us-img/about-us-bg.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -318,7 +318,7 @@ ul.navbar-nav{
 
 
 .browse-bg{
-    background-image: url('/about-us-img/browse-collection-bg.png');
+    background-image: url('/Images/about-us-img/browse-collection-bg.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -334,7 +334,7 @@ ul.navbar-nav{
  } 
 
 .products-bg{
-    background-image: url('/products-img/products-bg.png');
+    background-image: url('/Images/products-img/products-bg.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -353,7 +353,7 @@ ul.navbar-nav{
 }
 
 .resources-bg{
-  background-image:url('/resources-img/resources-bg.png');
+  background-image:url('/Images/resources-img/resources-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 145vh !important;
@@ -384,13 +384,13 @@ ul.navbar-nav{
 }
 /*CATALOGUE IMAGES*/
 .catalogue-bg{
-  background-image:url('/catalogue-images/catalogue-bg.png');
+  background-image:url('/Images/catalogue-images/catalogue-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   
 }
 .catalogue-bg-2{
-  background-image:url('/catalogue-images/catalogue-bg-2.png');
+  background-image:url('/Images/catalogue-images/catalogue-bg-2.png');
   background-size: 70% 90%;
   background-repeat: no-repeat;
   background-position: bottom left;
@@ -420,7 +420,7 @@ ul.navbar-nav{
 
 .contemporary{
   position:relative;
-  background-image:url('/catalogue-images/Rectangle5.png');
+  background-image:url('/Images/catalogue-images/Rectangle5.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -429,7 +429,7 @@ ul.navbar-nav{
 
 .traditional{
   position:relative;
-  background-image:url('/catalogue-images/traditional.png');
+  background-image:url('/Images/catalogue-images/traditional.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -438,7 +438,7 @@ ul.navbar-nav{
 
 .framed{
   position:relative;
-  background-image:url('/catalogue-images/framed.png');
+  background-image:url('/Images/catalogue-images/framed.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -447,7 +447,7 @@ ul.navbar-nav{
 
 .cut-to-size{
   position:relative;
-  background-image:url('/catalogue-images/cut-to-size.png');
+  background-image:url('/Images/catalogue-images/cut-to-size.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -472,7 +472,7 @@ ul.navbar-nav{
 
 .browse-contemporary{
   position:relative;
-  background-image:url('/about-us-img/contemporary.png');
+  background-image:url('/Images/about-us-img/contemporary.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -481,7 +481,7 @@ ul.navbar-nav{
 
 .browse-traditional{
   position:relative;
-  background-image:url('/about-us-img/traditional-sliding.png');
+  background-image:url('/Images/about-us-img/traditional-sliding.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -491,7 +491,7 @@ ul.navbar-nav{
 
 .browse-framed{
   position:relative;
-  background-image:url('/about-us-img/framed-wall.png');
+  background-image:url('/Images/about-us-img/framed-wall.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -501,7 +501,7 @@ ul.navbar-nav{
 
 .browse-cutsize{
   position:relative;
-  background-image:url('/about-us-img/cut-to-size.png');
+  background-image:url('/Images/about-us-img/cut-to-size.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -538,7 +538,7 @@ ul.navbar-nav{
   justify-content: center;
 }
 .contact-us-bg{
-  background-image:url('/contact-us-img/scene-office-desk-standing-office-3d-rendering.png');
+  background-image:url('/Images/contact-us-img/scene-office-desk-standing-office-3d-rendering.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -547,7 +547,7 @@ ul.navbar-nav{
 }
 
 .contact-page-bg{
-  background-image:url('/contact-us-img/contact-page-bg.png');
+  background-image:url('/Images/contact-us-img/contact-page-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   
