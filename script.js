@@ -33,11 +33,7 @@ $(document).ready(function() {
     }
 
 
-    function videoPopup(){
-      var popup = document.getElementById("videoStory");
-      popup.style.display = "block";
-      
-    }
+    
     
 
 
