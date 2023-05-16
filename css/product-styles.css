@@ -11,12 +11,15 @@
     width:auto;
   }
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+.category.active{
   background-color: #313C87 !important;
   color: #ffffff !important;
-  
 }
-
+.subcat.active{
+  background-color: #B5A60B !important;
+  color: #ffffff !important;
+}
 .products-width{
     padding: 1em;
     width:80%;
