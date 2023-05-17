@@ -13,6 +13,16 @@ $(document).ready(function() {
   
   $(window).on('load',function(){
     var hash = window.location.hash.substr(1);
+
+//tab-redirection    
+    if(hash === "contemporary-tab"){        
+      $("#contemporary-tab").trigger("click");
+      window.scrollTo(0, top);
+
+      $("#contemporary-pane").trigger("click");
+      window.scrollTo(0, top);
+  };
+
     if(hash === "traditional-tab"){        
         $("#traditional-tab").trigger("click");
         window.scrollTo(0, top);
