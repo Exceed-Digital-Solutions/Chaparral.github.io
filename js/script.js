@@ -8,6 +8,7 @@ $(document).ready(function() {
     // Add active class to navbar link corresponding to current page
     var pathname = window.location.pathname;
     $('.navbar-nav a[href="' + pathname + '"]').addClass('active');
+
   });
   
 
