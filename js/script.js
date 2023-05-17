@@ -33,7 +33,6 @@ $(document).ready(function() {
     }
 
 
-    
 
 //Banners Functions on product page
     function ContemporaryFunction() {
