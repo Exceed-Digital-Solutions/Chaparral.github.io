@@ -32,6 +32,9 @@ $(document).ready(function() {
         pwa.document.close();
     }
 
+
+    
+
 //Banners Functions on product page
     function ContemporaryFunction() {
       var contemporary = document.getElementById("contemp-banner");
