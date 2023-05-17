@@ -46,7 +46,7 @@
   <section name="landing">
         <div class="container-fluid d-flex align-items-center products-bg" >
             <div class="container tab-content max-container">
-              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <!--div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
 
                   <div class="carousel-item active">
@@ -108,8 +108,51 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+              </div-->
             
+            <div id="contemp-banner" class="row container-padding" style="display:block;">
+                <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="text-black text-center display-5 poppins">Contemporary Sliding <br> Closet Doors</h2>
+                    <br>
+                    <p class="col-md-10 mx-5">
+                        A popular choice for modern interior, our Contemporary Sliding Closet Doors offer a sleek and minimalist look while optimizing space for any interior.  One defining feature of our collection is their smooth and effortless sliding mechanism.  This smooth functionality ensures easy access to the contents of the closet while adding a touch of elegance to the room.
+                    <br><br>
+                    The Contemporary Sliding Closet Doors feature wide wood frames. Glass options from mirror to opaque white laminated glass, and back-painted polar white, compliment these beautiful wood frames.  Decor rails are added customization options that come with the collection.
+                    </p>           
+                </div>
+            </div>
+
+            <div id="traditional-banner" class="row container-padding" style="display:none;">
+              <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                  <h2 class="text-black text-center display-5 poppins">Traditional Sliding Closet Doors</h2>
+                  <br>
+                  <p class="col-md-10 mx-5">
+                    Traditional closet doors have been popular for years due to their space-saving design, ease of use, and versatile customization options.  They provide an elegant and functional solution in bedrooms. These doors tend to have time classic and timeless aesthetic, suitable to various interior design styles.  They compliment both contemporary and traditional room decors.
+                    <br><br>
+                    Chaparral’s Traditional Closet Doors are made of commercial grade rust resistant aluminum and steel framed doors.  Category II, safety backed mirror, ensures high quality mirror images without distortion.                          </p>           
+              </div>
+            </div>
+
+            <div id="framed-wall-banner" class="row container-padding" style="display:none;">
+              <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                  <h2 class="text-black text-center display-5 poppins">Framed Wall Mirrors</h2>
+                  <br>
+                  <p class="col-md-10 mx-5">
+                    Our custom framed wall mirrors are not only designed as vanity mirrors but decorative mirrors for all areas in a home. They add the perfect touch to any interior providing the perfect balance of functionality and aesthetics.
+                  </p>           
+              </div>
+            </div>
+
+            <div id="cut-to-size-banner" class="row container-padding" style="display:none;">
+              <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                  <h2 class="text-black text-center display-5 poppins">Cut-to-Size Mirrors</h2>
+                  <br>
+                  <p class="col-md-10 mx-5">
+                      Our cut-to-size mirror program provides a wide range of mirror sizes. Commonly used as vanity mirrors, these mirrors come with various edgework options. We offer custom sizes.
+                  </p>           
+              </div>
+            </div>
+
             </div> 
         </div>
 
@@ -122,16 +165,16 @@
             
             <ul class="d-flex justify-content-around nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item pb-3" role="presentation">
-                  <button class="nav-link category product-tab active" id="contemporary-tab" data-bs-toggle="pill" data-bs-target=".contemporary-pane" type="button" role="tab" aria-controls="contemporary" aria-selected="true">Contemporary Sliding Closet Doors</button>
+                  <button class="nav-link category product-tab active" id="contemporary-tab" onclick="ContemporaryFunction()" data-bs-toggle="pill" data-bs-target=".contemporary-pane" type="button" role="tab" aria-controls="contemporary" aria-selected="true">Contemporary Sliding Closet Doors</button>
                 </li>
                 <li class="nav-item pb-3" role="presentation">
-                  <button class="nav-link category product-tab" id="traditional-tab" data-bs-toggle="pill" data-bs-target=".traditional-pane" type="button" role="tab" aria-controls="traditional" aria-selected="false">Traditional Sliding Closet Doors</button>
+                  <button class="nav-link category product-tab" id="traditional-tab" onclick="TradFunction()" data-bs-toggle="pill" data-bs-target=".traditional-pane" type="button" role="tab" aria-controls="traditional" aria-selected="false">Traditional Sliding Closet Doors</button>
                 </li>
                 <li class="nav-item pb-3" role="presentation">
-                  <button class="nav-link category product-tab" id="framed-walls-tab" data-bs-toggle="pill" data-bs-target="#framed-walls" type="button" role="tab" aria-controls="framed-walls" aria-selected="false">Framed Walled Mirrors</button>
+                  <button class="nav-link category product-tab" id="framed-walls-tab" onclick="FramedWallFunction()" data-bs-toggle="pill" data-bs-target="#framed-walls" type="button" role="tab" aria-controls="framed-walls" aria-selected="false">Framed Walled Mirrors</button>
                 </li>
                 <li class="nav-item pb-3" role="presentation">
-                    <button class="nav-link category product-tab" id="cut-to-size-tab" data-bs-toggle="pill" data-bs-target="#cut-to-size" type="button" role="tab" aria-controls="cut-to-size" aria-selected="false">Cut-to-Size Mirrors</button>
+                    <button class="nav-link category product-tab" id="cut-to-size-tab" onclick="CutSizeFunction()" data-bs-toggle="pill" data-bs-target="#cut-to-size" type="button" role="tab" aria-controls="cut-to-size" aria-selected="false">Cut-to-Size Mirrors</button>
                   </li>
               </ul>
 
@@ -157,11 +200,11 @@
                         <h5 class="color3 mb-0 pt-3">700 Series | <b>NORTHWOOD</b> | Black Finish | Mirror</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/700 Series Wide Framed Wood Mirror _ Black.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/700 Series Wide Framed Wood Mirror _ Black.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                             </span></button></a>
-                          <a href="/Images/products-img/contemporary/700 Series Wide Framed Wood Mirror _ Black.jpg" download="" class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn">
+                          <a href="Images/products-img/contemporary/700 Series Wide Framed Wood Mirror _ Black.jpg" download="" class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               file_download
                             </span></button></a>                               
@@ -175,11 +218,11 @@
                         <h5 class="color3 mb-0 pt-3">700 Series | <b>NORTHWOOD</b> | White Finish | Mirror</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/700 Series Wide Framed Wood Mirror _ White2.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/700 Series Wide Framed Wood Mirror _ White2.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/contemporary/700 Series Wide Framed Wood Mirror _ White2.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/contemporary/700 Series Wide Framed Wood Mirror _ White2.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -194,11 +237,11 @@
                         <h5 class="color3 mb-0 pt-3">700 Series | <b>Chario Grigio</b> | 2-Panel with Opaque White Laminated Glass</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/CHARIO GRIGIO 700 Series Opaque White Laminate 2 Panel.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/CHARIO GRIGIO 700 Series Opaque White Laminate 2 Panel.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/contemporary/CHARIO GRIGIO 700 Series Opaque White Laminate 2 Panel.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/contemporary/CHARIO GRIGIO 700 Series Opaque White Laminate 2 Panel.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -211,11 +254,11 @@
                         <h5 class="color3 mb-0 pt-3">700 Series | <b>Chario Grigio</b> | 3-Lite with Opaque White Laminated Glass</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/CHARIO\ GRIGIO_WHITE\ LAMI_2\ PANEL_3\ LITE_IN\ USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/CHARIO\ GRIGIO_WHITE\ LAMI_2\ PANEL_3\ LITE_IN\ USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/contemporary/CHARIO GRIGIO_WHITE LAMI_2 PANEL_3 LITE_IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/contemporary/CHARIO GRIGIO_WHITE LAMI_2 PANEL_3 LITE_IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -228,11 +271,11 @@
                         <h5 class="color3 mb-0 pt-3">700 Series | <b>Chario Grigio</b> | 2-Panel with Polar White Glass</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/CHARIO GRIGIO_POLAR WHITE_2 PANEL.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/CHARIO GRIGIO_POLAR WHITE_2 PANEL.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/contemporary/CHARIO GRIGIO_POLAR WHITE_2 PANEL.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/contemporary/CHARIO GRIGIO_POLAR WHITE_2 PANEL.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -245,11 +288,11 @@
                         <h5 class="color3 mb-0 pt-3">700 Series | <b>Chario Grigio</b> | 3-Lite with Polar White Glass</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/CHARIO\ GRIGIO_POLAR\ WHITE_2\ PANEL_3\ LITE_INUSE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/CHARIO\ GRIGIO_POLAR\ WHITE_2\ PANEL_3\ LITE_INUSE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/contemporary/CHARIO GRIGIO_POLAR WHITE_2 PANEL_3 LITE_INUSE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/contemporary/CHARIO GRIGIO_POLAR WHITE_2 PANEL_3 LITE_INUSE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -262,11 +305,11 @@
                         <h5 class="color3 mb-0 pt-3">700 Series | <b>Chario Grigio</b> | 2-Panel with Mirror</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/CHARIO GRIGIO_MIRROR_2 PANEL_IN USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/CHARIO GRIGIO_MIRROR_2 PANEL_IN USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/contemporary/CHARIO GRIGIO_MIRROR_2 PANEL_IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/contemporary/CHARIO GRIGIO_MIRROR_2 PANEL_IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -278,11 +321,11 @@
                         <h5 class="color3 mb-0 pt-3">700 Series | <b>Chario Grigio</b> | 3-Lite with Mirror</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/CHARIO GRIGIO_MIRROR_2 PANEL_3 LITE_INUSE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/CHARIO GRIGIO_MIRROR_2 PANEL_3 LITE_INUSE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/contemporary/CHARIO GRIGIO_MIRROR_2 PANEL_3 LITE_INUSE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/contemporary/CHARIO GRIGIO_MIRROR_2 PANEL_3 LITE_INUSE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -297,11 +340,11 @@
                         <h5 class="color3 mb-0 pt-3">700 Series | <b>Garden Teak</b> | 2-Panel with Opaque White Laminated Glass</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/GARDEN TEAK_2 PANEL_WHITE LAMI_IN USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/GARDEN TEAK_2 PANEL_WHITE LAMI_IN USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/contemporary/GARDEN TEAK_2 PANEL_WHITE LAMI_IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/contemporary/GARDEN TEAK_2 PANEL_WHITE LAMI_IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -314,11 +357,11 @@
                         <h5 class="color3 mb-0 pt-3"> 700 Series | <b>Garden Teak</b> | 3-Lite with Opaque White Laminated Glass</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/GARDEN TEAK_2 PANEL_WHITE LAMI_3 LITE_IN USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/GARDEN TEAK_2 PANEL_WHITE LAMI_3 LITE_IN USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/contemporary/GARDEN TEAK_2 PANEL_WHITE LAMI_3 LITE_IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/contemporary/GARDEN TEAK_2 PANEL_WHITE LAMI_3 LITE_IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -331,11 +374,11 @@
                         <h5 class="color3 mb-0 pt-3"> 700 Series | <b>Garden Teak</b> | 2-Panel with Polar White Glass</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/GARDEN\ TEAK_2\ PANEL_POLAR\ WHITE_IN\ USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/GARDEN\ TEAK_2\ PANEL_POLAR\ WHITE_IN\ USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/contemporary/GARDEN TEAK_2 PANEL_POLAR WHITE_IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/contemporary/GARDEN TEAK_2 PANEL_POLAR WHITE_IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -348,11 +391,11 @@
                         <h5 class="color3 mb-0 pt-3"> 700 Series | <b>Garden Teak</b> | 3-Lite with Polar White Glass</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/GARDEN\ TEAK_2\ PANEL_POLAR\ WHITE_3\ LITE_IN\ USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/GARDEN\ TEAK_2\ PANEL_POLAR\ WHITE_3\ LITE_IN\ USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/contemporary/GARDEN TEAK_2 PANEL_POLAR WHITE_3 LITE_IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/contemporary/GARDEN TEAK_2 PANEL_POLAR WHITE_3 LITE_IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -365,11 +408,11 @@
                         <h5 class="color3 mb-0 pt-3">700 Series | <b>Garden Teak</b> | 2-Panel with Mirror</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/GARDEN\ TEAK_2\ PANEL_MIRROR_\ IN\ USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/GARDEN\ TEAK_2\ PANEL_MIRROR_\ IN\ USE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/contemporary/GARDEN TEAK_2 PANEL_MIRROR_ IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/contemporary/GARDEN TEAK_2 PANEL_MIRROR_ IN USE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -382,11 +425,11 @@
                         <h5 class="color3 mb-0 pt-3">700 Series | <b>Garden Teak</b> | 3-Lite with Mirror</h5>
                         <p class="color6"><small><i>Contemporary Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/contemporary/GARDEN TEAK_2 PANEL_MIRROR_3 LITE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/contemporary/GARDEN TEAK_2 PANEL_MIRROR_3 LITE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/contemporary/GARDEN TEAK_2 PANEL_MIRROR_3 LITE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/contemporary/GARDEN TEAK_2 PANEL_MIRROR_3 LITE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -405,11 +448,11 @@
                         <h5 class="color3 mb-0 pt-3"><b>100 SERIES</b> | Frameless Steel Sliding Closet Door</h5>
                         <p class="color6"><small><i>Traditional Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/traditional/100 SERIES.png'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/traditional/100 SERIES.png'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/traditional/100 SERIES.png" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/traditional/100 SERIES.png" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -422,11 +465,11 @@
                         <h5 class="color3 mb-0 pt-3"><b>150 SERIES</b> | Frameless Aluminum Sliding Closet Door</h5>
                         <p class="color6"><small><i>Traditional Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/traditional/150 SERIES.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/traditional/150 SERIES.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/traditional/150 SERIES.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/traditional/150 SERIES.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -441,11 +484,11 @@
                         <h5 class="color3 mb-0 pt-3"><b>250 SERIES</b> | Semi-Frameless Aluminum Sliding Closet Door</h5>
                         <p class="color6"><small><i>Traditional Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/traditional/250 SERIES.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/traditional/250 SERIES.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/traditional/250 SERIES.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/traditional/250 SERIES.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -458,11 +501,11 @@
                         <h5 class="color3 mb-0 pt-3"><b>250-C SERIES</b> | Raised Panel Steel Framed Sliding Closet Door</h5>
                         <p class="color6"><small><i>Traditional Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/traditional/250C SERIES.png'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/traditional/250C SERIES.png'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/traditional/250C SERIES.png" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/traditional/250C SERIES.png" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -477,11 +520,11 @@
                         <h5 class="color3 mb-0 pt-3"><b>500 SERIES</b> | Narrow Framed Steel Sliding Closet Door</h5>
                         <p class="color6"><small><i>Traditional Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/traditional/555 series.png'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/traditional/555 series.png'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/traditional/555 series.png" download  class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/traditional/555 series.png" download  class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -494,11 +537,11 @@
                         <h5 class="color3 mb-0 pt-3"><b>505 SERIES</b> | Flush Panel Steel Framed Sliding Closet Door</h5>
                         <p class="color6"><small><i>Traditional Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/traditional/505 SERIES.png'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/traditional/505 SERIES.png'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/traditional/505 SERIES.png" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/traditional/505 SERIES.png" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -513,11 +556,11 @@
                         <h5 class="color3 mb-0 pt-3"><b>550 Series</b> | Narrow Framed Aluminum Sliding Closet Door</h5>
                         <p class="color6"><small><i>Traditional Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/traditional/550 SERIES.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/traditional/550 SERIES.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/traditional/550 SERIES.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/traditional/550 SERIES.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -530,11 +573,11 @@
                         <h5 class="color3 mb-0 pt-3"><b>555 SERIES</b> | Aluminum Framed Sliding Flush Panel</h5>
                         <p class="color6"><small><i>Traditional Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/traditional/555 series.png'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/traditional/555 series.png'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/traditional/555 series.png" download  class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/traditional/555 series.png" download  class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -547,11 +590,11 @@
                         <h5 class="color3 mb-0 pt-3"><b>650 SERIES</b> | Wide Aluminum Framed</h5>
                         <p class="color6"><small><i>Traditional Sliding Closet Doors</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/traditional/650 Series.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/traditional/650 Series.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/traditional/650 Series.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/traditional/650 Series.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -570,11 +613,11 @@
                         <h5 class="color3 mb-0">Item #80741</h5>
                         <p class="color6"><small><i>Framed Wall Mirror</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -588,11 +631,11 @@
                         <h5 class="color3 mb-0">Item #80519</h5>
                         <p class="color6"><small><i>Framed Wall Mirror</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/framed-wall-mirrors/ARQADIA BLACK 2.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/framed-wall-mirrors/ARQADIA BLACK 2.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/framed-wall-mirrors/ARQADIA BLACK 2.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/framed-wall-mirrors/ARQADIA BLACK 2.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -606,11 +649,11 @@
                         <h5 class="color3 mb-0">Item #573237</h5>
                         <p class="color6"><small><i>Framed Wall Mirror</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/framed-wall-mirrors/ACADEMIE SILVER.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/framed-wall-mirrors/ACADEMIE SILVER.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/framed-wall-mirrors/ACADEMIE SILVER.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/framed-wall-mirrors/ACADEMIE SILVER.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -624,11 +667,11 @@
                         <h5 class="color3 mb-0">Item #80737</h5>
                         <p class="color6"><small><i>Framed Wall Mirror</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 1.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 1.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 1.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 1.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -643,11 +686,11 @@
                         <h5 class="color3 mb-0">Item #346791</h5>
                         <p class="color6"><small><i>Framed Wall Mirror</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/framed-wall-mirrors/GRAMERCY SILVER.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/framed-wall-mirrors/GRAMERCY SILVER.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/framed-wall-mirrors/GRAMERCY SILVER.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/framed-wall-mirrors/GRAMERCY SILVER.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -662,11 +705,11 @@
                         <h5 class="color3 mb-0">Item #80744</h5>
                         <p class="color6"><small><i>Framed Wall Mirror</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 2.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 2.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 2.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 2.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -680,11 +723,11 @@
                         <h5 class="color3 mb-0">Item #575252</h5>
                         <p class="color6"><small><i>Framed Wall Mirror</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/framed-wall-mirrors/FERROSA PEWTER 2.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/framed-wall-mirrors/FERROSA PEWTER 2.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/framed-wall-mirrors/FERROSA PEWTER 2.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/framed-wall-mirrors/FERROSA PEWTER 2.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -698,11 +741,11 @@
                         <h5 class="color3 mb-0">Item #80736</h5>
                         <p class="color6"><small><i>Framed Wall Mirror</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/framed-wall-mirrors/ARQADIA WARM SILVER.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/framed-wall-mirrors/ARQADIA WARM SILVER.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/framed-wall-mirrors/ARQADIA WARM SILVER.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/framed-wall-mirrors/ARQADIA WARM SILVER.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -717,11 +760,11 @@
                         <h5 class="color3 mb-0">Item #80739</h5>
                         <p class="color6"><small><i>Framed Wall Mirror</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 2-3_4.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 2-3_4.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 2-3_4.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/framed-wall-mirrors/ARQADIA BRIGHT SILVER 2-3_4.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -735,11 +778,11 @@
                         <h5 class="color3 mb-0">Item #BW74966</h5>
                         <p class="color6"><small><i>Framed Wall Mirror</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/framed-wall-mirrors/FRAMERICA STAINLESS WHITE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/framed-wall-mirrors/FRAMERICA STAINLESS WHITE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/framed-wall-mirrors/FRAMERICA STAINLESS WHITE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/framed-wall-mirrors/FRAMERICA STAINLESS WHITE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -754,11 +797,11 @@
                         <h5 class="color3 mb-0">Item #550286</h5>
                         <p class="color6"><small><i>Framed Wall Mirror</i></small></p>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/framed-wall-mirrors/WHITE\ WHITE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/framed-wall-mirrors/WHITE\ WHITE.jpg'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/framed-wall-mirrors/WHITE WHITE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/framed-wall-mirrors/WHITE WHITE.jpg" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              
@@ -773,11 +816,11 @@
                         <div class="cut-to-size browse-image-padding product-height print"></div>  
                         <h5 class="color3 mb-0 pt-3"><b>CUT-TO-SIZE</b></h5>
                         <div id="product-options">
-                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('/Images/products-img/cut-to-size/cut-to-size.png'); return false;" class="btn btn-primary pb-0 options-btn">
+                          <a href="" class="mx-1"><button type="button" onclick="PrintImage('Images/products-img/cut-to-size/cut-to-size.png'); return false;" class="btn btn-primary pb-0 options-btn">
                             <span class="material-icons-outlined">
                               print
                               </span></button></a>
-                          <a href="/Images/products-img/cut-to-size/cut-to-size.png" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
+                          <a href="Images/products-img/cut-to-size/cut-to-size.png" download class="mx-1"><button type="button" class="btn btn-primary pb-0 options-btn"><span class="material-icons-outlined">
                               file_download
                               </span></button></a>
                         </div>              

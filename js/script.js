@@ -32,9 +32,69 @@ $(document).ready(function() {
         pwa.document.close();
     }
 
-
-       
+//Banners Functions on product page
+    function ContemporaryFunction() {
+      var contemporary = document.getElementById("contemp-banner");
+      var traditional = document.getElementById("traditional-banner");
+      var framedWall = document.getElementById("framed-wall-banner");
+      var cutSize = document.getElementById("cut-to-size-banner");
+     
+      if (contemporary.style.display === "none") {
+        contemporary.style.display = "block";
+        traditional.style.display = "none";
+        framedWall.style.display = "none";
+        cutSize.style.display = "none";
+      }
+      
+     }     
     
+     function TradFunction() {
+      var contemporary = document.getElementById("contemp-banner");
+      var traditional = document.getElementById("traditional-banner");
+      var framedWall = document.getElementById("framed-wall-banner");
+      var cutSize = document.getElementById("cut-to-size-banner");
+     
+      if (traditional.style.display === "block") {
+        traditional.style.display = "block";
+        
+      } else {        
+        traditional.style.display = "block";
+        contemporary.style.display = "none";
+        framedWall.style.display = "none";
+        cutSize.style.display = "none";
+      }
+    }
 
+    function FramedWallFunction() {
+      var contemporary = document.getElementById("contemp-banner");
+      var traditional = document.getElementById("traditional-banner");
+      var framedWall = document.getElementById("framed-wall-banner");
+      var cutSize = document.getElementById("cut-to-size-banner");
+     
+      if (framedWall.style.display === "block") {
+        framedWall.style.display = "block";
+        
+      } else {        
+        traditional.style.display = "none";
+        contemporary.style.display = "none";
+        framedWall.style.display = "block";
+        cutSize.style.display = "none";
+      }
+    }
 
- 
+    function CutSizeFunction() {
+      var contemporary = document.getElementById("contemp-banner");
+      var traditional = document.getElementById("traditional-banner");
+      var framedWall = document.getElementById("framed-wall-banner");
+      var cutSize = document.getElementById("cut-to-size-banner");
+     
+      if (cutSize.style.display === "block") {
+        cutSize.style.display = "block";
+        
+      } else {        
+        traditional.style.display = "none";
+        contemporary.style.display = "none";
+        framedWall.style.display = "none";
+        cutSize.style.display = "block";
+      }
+    }
