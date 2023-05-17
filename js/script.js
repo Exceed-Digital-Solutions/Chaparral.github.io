@@ -11,7 +11,23 @@ $(document).ready(function() {
 
   });
   
-
+  $(window).on('load',function(){
+    var hash = window.location.hash.substr(1);
+    if(hash === "traditional-tab"){        
+        $("#traditional-tab").trigger("click");
+        window.scrollTo(0, top);
+    };
+    
+    if(hash === "framed-walls-tab"){        
+      $("#framed-walls-tab").trigger("click");
+      window.scrollTo(0, top);
+    };
+    
+    if(hash === "cut-to-size-tab"){        
+      $("#cut-to-size-tab").trigger("click");
+      window.scrollTo(0, top);
+    };
+});
 
   
 // For printing images
