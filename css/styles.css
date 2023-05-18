@@ -379,6 +379,12 @@ ul.navbar-nav{
     height:215vh;
   }
 }
+
+@media screen and (max-width:767px){
+  .resources-height{
+    height:175vh;
+  }
+}
 /*FIRST SECTION END*/
 
 
