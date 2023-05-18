@@ -382,7 +382,7 @@ ul.navbar-nav{
 
 @media screen and (max-width:767px){
   .resources-height{
-    height:175vh;
+    height:auto;
   }
 }
 /*FIRST SECTION END*/
