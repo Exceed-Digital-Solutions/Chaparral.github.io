@@ -9,7 +9,7 @@ $(document).ready(function() {
     var pathname = window.location.pathname;
     $('.navbar-nav a[href="' + pathname + '"]').addClass('active');
 
-    AOS.init();
+    
   });
   
   $(window).on('load',function(){
