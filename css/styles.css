@@ -360,7 +360,7 @@ ul.navbar-nav{
   background-image:url('../Images/resources-img/resources-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 145vh !important;
+  
 }
 
 @media screen and (max-width:767px){
@@ -368,6 +368,16 @@ ul.navbar-nav{
     height: 17vh !important;
   }
   
+}
+
+.resources-height{
+  height:175vh;
+}
+
+@media screen and (max-width:1880px){
+  .resources-height{
+    height:215vh;
+  }
 }
 /*FIRST SECTION END*/
 
