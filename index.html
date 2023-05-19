@@ -44,7 +44,7 @@
 
 
 <section name="landing">
-  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div id="landingCarousel" class="carousel slide carousel-fade">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="container-fluid d-flex align-items-center landing-bg">
@@ -78,11 +78,11 @@
       </div>
       
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#landingCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#landingCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -112,12 +112,12 @@ Chaparral is owned by Patrick Industries, Inc., a publicly traded company (NASDA
               </p> 
               <div class="w-100 d-flex flex-column justify-content-center align-items-center">
                 <button type="button" class="btn btn-primary btn-lg my-5 px-5 custom-button rounded">PLAY TO LEARN MORE</button>  
-                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="btn btn-primary pb-0 custom-button options-btn bg-transparent"><span class="material-symbols-rounded icon-size">
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#videoModal" class="btn btn-primary pb-0 custom-button options-btn bg-transparent"><span class="material-symbols-rounded icon-size">
                   play_circle
                   </span></button>
                   
                   
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalTitle" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered"> 
                     <div class="modal-content">
                       <iframe width="560" height="315" src="https://www.youtube.com/embed/2_vYxzf-fgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                      
@@ -255,7 +255,7 @@ Chaparral is owned by Patrick Industries, Inc., a publicly traded company (NASDA
 <div class="container-fluid container-padding contact-us-flex contact-us-bg">
   <div class="col-md-6 d-flex flex-column contact-us-container" data-aos="fade-up">
   <h5 class="color1 pb-3 font-weight-bold ubuntu-700">CONTACT US</h5>
-  <form action="" method="POST">
+  <form action="" method="POST" enctype="text/plain" name="EmailForm">
     <div class="row">
       <div class="col-md-6 pb-3">
         <input type="text" name="Name" class="form-control border-0 bg-color2 montserrat" placeholder="Name" required>
@@ -269,7 +269,7 @@ Chaparral is owned by Patrick Industries, Inc., a publicly traded company (NASDA
       </div>
 
       <div class="contact-us-flex pt-3">
-        <button type="submit" class="btn btn-primary my-1 bg-color1 px-5" data-bs-toggle="modal" data-bs-target="#exampleModal">SUBMIT</button>      
+        <button type="submit" class="btn btn-primary my-1 bg-color1 px-5">SUBMIT</button>      
       </div>
     </div>
   </form>  
