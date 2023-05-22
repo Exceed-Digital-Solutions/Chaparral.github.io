@@ -1,5 +1,8 @@
 
-
+.f-6{
+  font-size: 6px;
+  margin-bottom:1px;
+}
 
 .product-tab{
   background-color: #F5F5F5 !important;
@@ -33,15 +36,20 @@
   }
 
 .cut-to-size-width{
-    padding: 1em;
-    width:100%;
-    max-width:none;
-    min-width:300px;
-    background-color: white;
-    transition: all 0.5s ease;
-    border: #E3E3E3 solid 1px;
-}  
-.products-width:hover, .cut-to-size-width:hover{
+  padding: 1em;
+  width:80%;
+  
+  background-color: white;
+  transition: all 0.5s ease;
+  
+} 
+
+@media screen and (max-width:767px){
+  .cut-to-size-width{ 
+    width:100%;    
+  } 
+}
+.products-width:hover{
     max-width:none;
     z-index:9;
     transform: scale(1.1);
@@ -54,7 +62,7 @@
   display:flex;
   justify-content: end;
 }
-.products-width:hover>#product-options, .cut-to-size-width:hover>#product-options{
+.products-width:hover>#product-options{
     display:flex;
     justify-content: flex-end;
     
