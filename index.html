@@ -12,9 +12,9 @@
  <!-- Link to font files located in a subfolder named "fonts" -->
 
  <div class="container-fluid">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top navheight">
+  <nav class="navbar navbar-expand-lg navbar-light navheight" style="z-index:999;">
     <div class="d-flex flex-nowrap w-100 justify-content-between align-items-center">
-      <a class="navbar-brand" href="index.html"><img src="Images/logo/logo.png"></a>
+      <a class="navbar-brand" href="index.html"><img src="Images/logo/logo.png" class="logo-bg"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -23,16 +23,16 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="about-us.html">ABOUT</a>
+          <a class="nav-link nav-color" href="about-us.html">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="products.html#contemporary-tab">PRODUCTS</a>
+          <a class="nav-link nav-color" href="products.html#contemporary-tab">PRODUCTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="resources.html">RESOURCES</a>
+          <a class="nav-link nav-color" href="resources.html">RESOURCES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">CONTACT</a>
+          <a class="nav-link nav-color" href="contact.html">CONTACT</a>
         </li>
       </ul>
     </div>
@@ -43,15 +43,17 @@
 <body>
 
 
-<section name="landing">
+<section name="landing" id="section-1">
+  
   <div id="landingCarousel" class="carousel slide carousel-fade">
     <div class="carousel-inner">
       <div class="carousel-item active">
+        
         <div class="container-fluid d-flex align-items-center landing-bg">
           <div class="container max-container">
             
             <div class="row d-flex align-items-center">
-              <div class="col-md-10 col-xl-6">
+              <div class="col-md-10 col-xl-6 mt-5">
                 
                   <h1 class="text-white display-3 pb-md-5 landing-headline" data-aos="fade-right" data-aos-duration="900">Taking innovation, experience, and expertise to market.</h1> 
                   <a href="#section2"><button type="button" class="btn btn-primary btn-lg my-5 px-5 custom-button">READ MORE</button></a>
@@ -66,7 +68,7 @@
           <div class="container max-container">
             
             <div class="row d-flex align-items-center">
-              <div class="col-md-10 col-xl-6">
+              <div class="col-md-10 col-xl-6 mt-5">
                 
                   <h1 class="text-white display-3 pb-md-5 landing-headline">Taking innovation, experience, and expertise to market.</h1> 
                   <a href="#section2"><button type="button" class="btn btn-primary btn-lg my-5 px-5 custom-button">READ MORE</button></a>
