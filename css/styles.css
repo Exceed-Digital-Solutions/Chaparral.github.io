@@ -310,14 +310,69 @@ font-size:14px !important;
   }
 
   .landing-bg-2{
-    background-image: url('../Images/home-images/landing-bg-2.png');
+    background-image: url('../Images/carousel/550\ SERIES.jpg');
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
     padding:10%;
     z-index: 12;
     height: auto;
-  }  
+  }
+  
+  .landing-bg-4{
+    background-image: url('../Images/carousel/ARQADIA\ BRIGHT\ SILVER\ 1.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+  .landing-bg-5{
+    background-image: url('../Images/carousel/GARDEN\ TEAK_2\ PANEL_MIRROR_\ IN\ USE.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+  .landing-bg-6{
+    background-image: url('../Images/carousel/100\ SERIES.png');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+  .landing-bg-7{
+    background-image: url('../Images/carousel/650\ Series.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+  .landing-bg-8{
+    background-image: url('../Images/carousel/FERROSA\ PEWTER\ 2.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+  .landing-bg-11{
+    background-image: url('../Images/carousel/ARQADIA\ BRIGHT\ SILVER\ 2.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
 .about-us-bg{
     background-image: url('../Images/about-us-img/about-us-bg.png');
     background-size: cover;
