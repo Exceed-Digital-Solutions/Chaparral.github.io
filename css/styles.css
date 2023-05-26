@@ -319,6 +319,15 @@ font-size:14px !important;
     height: auto;
   }
   
+  .landing-bg-3{
+    background-image: url('../Images/carousel/500\ Series_FINAL.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
   .landing-bg-4{
     background-image: url('../Images/carousel/ARQADIA\ BRIGHT\ SILVER\ 1.jpg');
     background-size: cover;
@@ -357,6 +366,26 @@ font-size:14px !important;
   }
   .landing-bg-8{
     background-image: url('../Images/carousel/FERROSA\ PEWTER\ 2.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+
+  .landing-bg-9{
+    background-image: url('../Images/carousel/250\ SERIES_FINAL.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+
+  .landing-bg-10{
+    background-image: url('../Images/carousel/700\ Series\ Wide\ Framed\ Wood\ Mirror\ _\ Black.jpg');
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
