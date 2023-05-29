@@ -15,6 +15,11 @@
     font-family: 'Noto Sans';
     src: url('path/to/NotoSans-Regular.ttf') format('truetype');
   }
+
+  @font-face {
+    font-family: 'Mr Eaves XL';
+    src: url('../Fonts/FontsFree-Net-MrEavesXLModOT-Reg.ttf');
+  }
 html,body
   {
       width: 100%;
@@ -109,6 +114,15 @@ html,body
 .poppins-700{
   font-family: 'Poppins';
   font-weight:700;
+}
+
+.eaves{
+  font-family: 'Mr Eaves XL';
+}
+
+.eaves-700{
+  font-family: 'Mr Eaves XL';
+  font-weight: 700;
 }
 /*FONTS END*/
 
