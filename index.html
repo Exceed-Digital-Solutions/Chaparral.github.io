@@ -352,7 +352,7 @@ Chaparral is owned by Patrick Industries, Inc., a publicly traded company (NASDA
 <div class="container-fluid container-padding contact-us-flex contact-us-bg">
   <div class="col-md-6 d-flex flex-column contact-us-container" data-aos="fade-up">
   <h5 class="color1 pb-3 font-weight-bold ubuntu-700">CONTACT US</h5>
-  <form action="" method="GET" enctype="text/plain" name="EmailForm" target="dummyframe" onsubmit="alert('you submitted the form');">
+  <form action="" method="GET" enctype="text/plain" name="EmailForm" target="dummyframe" onsubmit="alert('Form has been sent to Chaparral!');" onclick="showAlert();">
     <div class="row">
       <div class="col-md-6 pb-3">
         <input type="text" name="Name" class="form-control border-0 bg-color2 montserrat" placeholder="Name" required>
@@ -368,7 +368,13 @@ Chaparral is owned by Patrick Industries, Inc., a publicly traded company (NASDA
       <div class="contact-us-flex pt-3">
         <button type="submit" class="btn btn-primary my-1 bg-color1 px-5">SUBMIT</button>      
       </div>
-    </div>
+
+      <div class="container" style="display:none;" id="myAlert">
+        <div class="alert alert-success alert-dismissible" id="myAlert2">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-hidden="true">&times;</button>
+            Success! message sent successfully.
+        </div>
+      </div>
   </form>  
   </div>
 </div>
