@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 function showAlert(){
   if($("#myAlert").find("div#myAlert2").length==0){
-    $("#myAlert").append("<div class='alert alert-success alert-dismissable' id='myAlert2'> <button type='button' class='close' data-dismiss='alert'  aria-hidden='true'>&times;</button> Success! message sent successfully.</div>");
+    $("#myAlert").append("<div class='alert alert-success alert-dismissible fade show' id='myAlert2' role='alert'><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>Success! message sent successfully.</div>");
   }
   $("#myAlert").css("display", "");
 }
