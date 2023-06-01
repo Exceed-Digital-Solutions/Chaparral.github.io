@@ -314,8 +314,14 @@ font-size:14px !important;
     }
   }
 
-
-
+.height-1080{
+  height:1080px;
+}
+@media screen and (max-width:767px){
+  .height-1080{
+    height:900px;
+  }
+}
 .landing-bg {
     background-image: url('../Images/home-images/landing-bg.png');
     background-size: cover;
