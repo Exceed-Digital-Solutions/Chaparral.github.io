@@ -124,6 +124,9 @@ html,body
   font-family: 'Mr Eaves XL';
   font-weight: 700;
 }
+.fw-500{
+  font-weight: 500;
+}
 /*FONTS END*/
 
 .letter-space-3{
