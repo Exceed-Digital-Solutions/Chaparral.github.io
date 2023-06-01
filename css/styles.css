@@ -55,7 +55,7 @@ html,body
 }
 
 .bg-color3{
-  background-color: #B5A60B;
+  background-color: #B5A60B !important;
 }
 
 .color4{
@@ -298,6 +298,12 @@ font-size:14px !important;
    
 }
 
+.btn-radius{
+  border-radius: 10px 0px 0px 10px;
+}
+.btn-radius-2{
+  border-radius: 0px 10px 10px 0px;
+}
 .landing-headline{
   
   font-weight:600;
