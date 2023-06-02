@@ -343,11 +343,11 @@ font-size:14px !important;
   }
 
 .height-1080{
-  height:1080px;
+  height:1080px !important;
 }
 @media screen and (max-width:767px){
   .height-1080{
-    height:900px;
+    height:850px !important;
   }
 }
 .landing-bg {
