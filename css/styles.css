@@ -301,6 +301,25 @@ font-size:14px !important;
    
 }
 
+.resources-btn{
+  background-color: white;
+    border: solid 1px #B5A60B;
+    border-radius: 0px;
+    font-family: 'Mr Eaves XL';
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 2px;
+}
+
+.resources-btn:hover{
+  background-color: #B5A60B;
+    border: solid 1px white;
+    border-radius: 0px;
+    font-family: 'Mr Eaves XL';
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
 .btn-radius{
   border-radius: 10px 0px 0px 10px;
 }
