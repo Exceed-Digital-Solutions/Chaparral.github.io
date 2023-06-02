@@ -30,8 +30,11 @@ html,body
       font-family: 'Mr Eaves XL';
       
   }
-@media screen and (max-width:990px){
-  
+@media screen and (min-width: 576px){
+  .video-size{
+    max-width: 720px;
+    height: 405px;
+  }
  
 }
   
