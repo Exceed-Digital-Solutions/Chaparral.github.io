@@ -544,6 +544,10 @@ font-size:14px !important;
   height:175vh;
 }
 
+.resources-img{
+  width: 40%;
+}
+
 @media screen and (max-width:1880px){
   .resources-height{
     height:215vh;
@@ -554,7 +558,12 @@ font-size:14px !important;
   .resources-height{
     height:auto;
   }
+
+  .resources-img{
+    width:100% !important;
+  }
 }
+
 
 .accordion-ml{
   margin-left:3%;
