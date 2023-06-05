@@ -807,6 +807,13 @@ font-size:14px !important;
     border-color: #ffffff;
  }
 
+ @media (max-width:767px){
+  .footer-container-border{
+    
+    border-width: 0px;
+    
+ }
+ }
 .p-pad-2{
   padding-left:5%;
 } 
