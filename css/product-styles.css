@@ -1,6 +1,6 @@
 
 .f-6{
-  font-size: 6px;
+  font-size: 11px;
   margin-bottom:1px;
 }
 
@@ -74,7 +74,7 @@
 
 @media screen and (max-width: 767px){
   .product-height{
-    height: 300px;
+    height: 150px;
   }
 }
 .options-btn{
@@ -393,7 +393,7 @@
 
   .white-white{
     position:relative;
-    background-image: url('../Images/products-img/framed-wall-mirrors/WHITE\ WHITE.jpg');
+    background-image: url('../Images/products-img/framed-wall-mirrors/9White\ White550286.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
