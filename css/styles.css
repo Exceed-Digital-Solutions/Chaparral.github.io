@@ -333,6 +333,20 @@ font-size:14px !important;
     color: #ffffff;
     letter-spacing: 2px;
 }
+
+.btn-primary:hover{
+  background-color: #B5A60B;
+  border: solid 1px #B5A60B;
+
+}
+.parent-btn:hover > .btn-primary{
+  background-color: #B5A60B;
+  border: solid 1px #B5A60B;
+
+}
+.parent-btn:hover > .arrow-btn{
+  background-color: #313C87 !important;
+}
 .btn-radius{
   border-radius: 10px 0px 0px 10px;
 }
