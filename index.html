@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">	
+<script src="https://www.google.com/recaptcha/api.js"></script>
  <!-- Link to font files located in a subfolder named "fonts" -->
 
  <div class="container-fluid">
@@ -342,7 +343,7 @@
       <h2 class="text-black border-gold col-md-10 pb-3 ubuntu-700">GET IN TOUCH</h2>
     </div>
   
-  <form action="" method="GET" enctype="text/plain" name="EmailForm" target="dummyframe" onsubmit="alert('Form has been sent to Chaparral!');" onclick="showAlert();">
+  <form action="" method="GET" enctype="text/plain" name="EmailForm" target="dummyframe" onsubmit="validateRecaptcha();" >
     <div class="row col-md-11 ms-md-5">
       <div class="col-md-6 pb-3">
         <input type="text" name="Name" class="form-control border-0 bg-color2 montserrat" placeholder="Name" required>
@@ -354,11 +355,11 @@
       <div class="col-md-12 pt-3">
         <textarea name="Message" class="form-control border-0 bg-color2 montserrat" id="Textarea1" placeholder="Message" rows="10" required></textarea>
       </div>
-
+      <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LcDDXEmAAAAAHpKv2Z43DT2TkF_FEDjUD1lIItL"></div>
       <div class="contact-us-flex pt-3">
         <button type="submit" class="btn btn-primary my-1 bg-color1 px-5">SEND US A MESSAGE</button>      
       </div>
-
+      <span class="msg-error error"></span>
       <div class="container mt-1" style="display:none;" id="myAlert">
         <div class="alert alert-success alert-dismissible fade show" id="myAlert2" role="alert">
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

@@ -14,7 +14,8 @@ $(document).ready(function() {
   
   $(window).on('load',function(){
     var hash = window.location.hash.substr(1);
-
+    
+  
 //tab-redirection    
     if(hash === "contemporary-tab"){        
       $("#contemporary-tab").trigger("click");
@@ -40,14 +41,34 @@ $(document).ready(function() {
     };
 });
 
+//validate recaptcha
+function validateRecaptcha() {
+  var response = grecaptcha.getResponse();
+  if (response.length === 0) {
+      alert("You need to fill the captcha");
+      return false;
+  } else {
+    if($("#myAlert").find("div#myAlert2").length==0){
+      $("#myAlert").append("<div class='alert alert-success alert-dismissible fade show' id='myAlert2' role='alert'><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>Success! message sent successfully.</div>");
+    }
+    $("#myAlert").css("display", "");
+  }
+}
+
+
+
 // Alert
 function showAlert(){
+  
   if($("#myAlert").find("div#myAlert2").length==0){
     $("#myAlert").append("<div class='alert alert-success alert-dismissible fade show' id='myAlert2' role='alert'><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>Success! message sent successfully.</div>");
   }
   $("#myAlert").css("display", "");
 }
+
   
+  
+
 // For printing images
     function ImagetoPrint(source)
     {
