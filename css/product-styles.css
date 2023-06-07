@@ -71,9 +71,14 @@
 .product-height{
   height: 700px;
 }
-
+.product-height-2{
+  height:850px;
+}
 @media screen and (max-width: 767px){
   .product-height{
+    height: 150px;
+  }
+  .product-height-2{
     height: 150px;
   }
 }
