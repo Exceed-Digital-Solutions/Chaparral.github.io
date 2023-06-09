@@ -574,15 +574,17 @@ font-size:14px !important;
   width: 40%;
 }
 
-@media screen and (max-width:1880px){
+@media screen and (min-width:768px){
   .resources-height{
     height:215vh;
+    margin-top:25%;
   }
 }
 
 @media screen and (max-width:767px){
   .resources-height{
     height:auto;
+    margin-top:10%;
   }
 
   .resources-img{
