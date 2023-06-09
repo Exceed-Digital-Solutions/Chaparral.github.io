@@ -286,7 +286,7 @@ a.nav-shadow{
 }
 
 .logo-bg{
-  background-color: white;
+  background-color: transparent;
   margin-top: -20px;
   padding: 5%;
 }
@@ -446,7 +446,7 @@ font-size:14px !important;
     height: auto;
   }
   .landing-bg-7{
-    background-image: url('../Images/carousel/650\ Series.jpg');
+    background-image: url('../Images/products-img/traditional/650\ Series.jpg');
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
