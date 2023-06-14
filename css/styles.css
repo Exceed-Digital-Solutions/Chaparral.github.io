@@ -306,7 +306,11 @@ font-size:14px !important;
 .fs-50{
   font-size:50px;
 }
-
+@media screen and (max-width:400px){
+  .fs-50{
+    font-size:32px;
+  }
+}
 /*Navigation Bar END*/
 
 
