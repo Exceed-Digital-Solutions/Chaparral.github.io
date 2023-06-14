@@ -365,13 +365,20 @@ font-size:14px !important;
   border: solid 1px #B5A60B;
 
 }
-.parent-btn:hover > .btn-primary{
+.btn-primary-2{
+  background-color: transparent;
+  border: solid 1px #B5A60B !important;
+  color:#b5a60b;
+}
+.parent-btn:hover > .btn-primary-2{
   background-color: #B5A60B;
   border: solid 1px #B5A60B;
-
+ color:white;
 }
 .parent-btn:hover > .arrow-btn{
-  background-color: #313C87 !important;
+  background-color: transparent !important;
+  color: #B5A60B !important;
+  border: solid 1px #B5A60B !important;
 }
 .btn-radius{
   border-radius: 10px 0px 0px 10px;
