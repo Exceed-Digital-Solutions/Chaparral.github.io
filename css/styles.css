@@ -311,6 +311,13 @@ font-size:14px !important;
     font-size:32px;
   }
 }
+
+.number{
+  color:black;
+}
+.number:hover{
+  color:#313C87;
+}
 /*Navigation Bar END*/
 
 
