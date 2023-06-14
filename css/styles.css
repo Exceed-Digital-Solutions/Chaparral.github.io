@@ -19,6 +19,11 @@
     font-family: 'Mr Eaves XL';
     src: url('../Fonts/FontsFree-Net-MrEavesXLModOT-Reg.ttf');
   }
+
+  @font-face {
+    font-family: 'Century Gothic';
+    src: url('../Fonts/century-gothic/Century\ Gothic.ttf');
+  }
 html,body
   {
       width: 100%;
@@ -83,7 +88,7 @@ html,body
 
 /*FONTS*/
 .century{
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
 }
 .montserrat{
   font-family: 'Montserrat';
