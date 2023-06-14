@@ -47,13 +47,14 @@
           <div class="">
             <div class="row d-flex align-items-start justify-content-center mt-5">
                 <div class="col-md-11 h-100 d-flex flex-column justify-content-start mt-5 p-5 contact-page-padding">
-                  <h2 class="text-black display-6 pb-3 ubuntu-700 mt-5">GET IN TOUCH</h2>
-                  <p class="col-md-10 pb-3">We’d love to hear from you. The best way to reach 
+                  <h2 class="text-black fs-50 pb-3 ubuntu-700 mt-5">GET IN TOUCH</h2>
+                  <p class="col-md-10 pb-3 fs-5">We’d love to hear from you. The best way to reach 
                     <br>
                     us is through email using the contact form below.</p>
                     
-                  <form action="/mailer-contact-us.php" method="GET" class="col-md-12 ps-md-5" target="dummyframe" onsubmit="validateRecaptcha();">
-                      <div class="row col-md-10 ps-md-5 ms-md-5">
+                  <form action="/mailer-contact-us.php" method="GET" class="col-md-12" target="dummyframe" onsubmit="validateRecaptcha();">
+                    <div class="d-flex justify-content-center">  
+                    <div class="row col-md-7">
                           <label for="first-name" class="montserrat-700">NAME*</label>
                           <div class="col-md-6 pb-4">     
                             <input type="text" name="first-name" class="form-control border-1 color-5 bg-color4 montserrat" id="first-name" placeholder="FIRST NAME" required>
@@ -96,16 +97,17 @@
                             </div>
                           </div>                         
                       </div>
+                    </div>
                   </form>
                 
                 </div>                       
                 <div class="col-md-12 h-100 d-md-flex justify-content-center p-5">
                   <div class="col-md-4 pt-5 pe-5">
-                    <b class="fs-3">GIVE US A CALL</b> <br><br> 
+                    <b class="fs-2">GIVE US A CALL</b> <br><br> 
                     <p class="fs-5">  
                     We understand that sometimes we have that quick question we need to ask. Call us.  Our wonderful Customer Care Team will be happy to assist you.  
                     <br><br>
-                    <div class="d-flex align-items-center fs-5"><span class="iconify" data-icon="ri:phone-fill" data-width="20" data-height="20"></span><b>  1.888.244.1734</b></div>
+                    <div class="d-flex align-items-center fs-5"><span class="iconify" data-icon="ri:phone-fill" data-width="20" data-height="20"></span><b><a class="ms-2"href="tel:1.888.244.1734" style="color:black;">1.888.244.1734</a></b></div>
                     </p>
                   </div>
                   <div class="map col-md-6 pt-5 ps-md-5">
