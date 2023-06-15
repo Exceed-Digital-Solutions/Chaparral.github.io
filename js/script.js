@@ -66,7 +66,11 @@ function showAlert(){
   $("#myAlert").css("display", "");
 }
 
-  
+//to Top 
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}  
   
 
 // For printing images

@@ -100,7 +100,14 @@
   background-color: #313C87;
   color: #ffffff;
 }
-
+#topBtn{
+  border:none;
+  background-color: #313C87;
+  color: #ffffff;
+}
+#topBtn:hover{
+  background-color: #B5A60B;
+}
 /*CONTEMPORARY*/
 .contemporary-1{
   position:relative;
