@@ -994,6 +994,13 @@ font-size:14px !important;
 p > a {
   color:white;
 }
+
+.social{
+  color:white!important;
+}
+.social:hover{
+  color:#B5A60B!important;
+}
 /*FOOTER END*/
 
 /*recaptcha*/
