@@ -22,7 +22,7 @@
 
 @media screen and (max-width:300px){
   .nav-pills .nav-link{
-    width:auto;
+    width:200px;
   }
 }
 
