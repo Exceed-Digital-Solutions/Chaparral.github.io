@@ -13,13 +13,13 @@
  <div class="container-fluid">
   <nav class="navbar navbar-expand-lg navbar-light navheight">
     <div class="d-flex flex-nowrap w-100 justify-content-between align-items-center">
-      <a class="navbar-brand" href="index.html"><img src="Images/logo/logo.png"></a>
+      <a class="navbar-brand" href="index.html"><img src="Images/logo/logo.png" class="logo-bg" style="width:250px;"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="z-index: 1;">
-      <ul class="navbar-nav nav-fs">
+      <ul class="navbar-nav nav-fs mt-3">
         <li class="nav-item">
           <a class="nav-link" href="about-us.html">ABOUT</a>
         </li>
@@ -45,12 +45,12 @@
             <div class="">
                 <div class="row d-flex align-items-start justify-content-center">
                   
-                  <div class="col-md-4 resources-bg h-100 d-flex justify-content-center align-items-center pt-5">
-                    <h2 class="text-black pt-md-5 mx-auto poppins display-6 fw-bold resources-height">RESOURCES</h2>
+                  <div class="col-lg-4 resources-bg h-100 d-flex justify-content-center align-items-center pt-5">
+                    <h2 class="text-black pt-md-5 mx-auto poppins fs-50 fw-bold resources-height">RESOURCES</h2>
                   </div>
                   
-                      <div class="h-100 col-md-8 d-flex justify-content-center flex-column align-items-lg-center catalogue-gap mt-md-5 p-5">
-                          <div class="col-md-12">
+                      <div class="h-100 col-lg-8 d-flex justify-content-center flex-column align-items-lg-center catalogue-gap mt-md-5 p-5 paddingtop">
+                          <div class="col-md-12 mt-5">
                             <div class="accordion accordion-flush" id="resourcesAccordion">
                                 <div name="warranty" class="accordion-item">
                                   <h2 class="accordion-header" id="flush-headingOne">
@@ -93,7 +93,7 @@
                                             </p>
                                             <br>
                                             <div class="d-flex flex-column mb-3 eaves fs-5">
-                                              <b>Download Series 700</b> 
+                                              <b>Series 700</b> 
                                               <a href="Files/Specification Sheet_Contemporary Closet Doors.pdf" download target="_blank"><button type="button" class="mx-sm-4 btn btn-primary btn-lg px-5 resources-btn">DOWNLOAD SPEC SHEET</button></a>
                                             </div>
                                             
@@ -308,6 +308,22 @@
                                     </div>
                                   </div>
                                 </div>
+                                <!--div name="catalog" class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingSeven">
+                                    <button class="accordion-button collapsed eaves fw-bold fs-5 py-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                      CATALOG
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#resourcesAccordion">
+                                    <div class="accordion-body">
+                                      <div class="d-flex flex-column mb-3 eaves fs-5">
+                                        <b>Chaparral Catalog</b> 
+                                        <a href="Files/Chaparral_Re-Brand_Catalog-US_2022_No Crop Marks.pdf" download target="_blank"><button type="button" class="mx-sm-4 btn btn-primary btn-lg px-5 resources-btn">DOWNLOAD CATALOG</button></a>
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                </div-->
                               </div>
                           </div>
                       </div>
@@ -316,60 +332,72 @@
         </div>
     </section>
 
-  <!--section name="CTA">
-    <div class="container-fluid d-flex align-items-center container-padding landing-bg p-3">
+  <section name="CTA">
+    <div class="container-fluid d-flex align-items-center container-padding landing-bg1 p-3" style="height:90vh;">
       <div class="container max-container">
-        <div class="row align-items-center container-padding">
-        <div class="col-md-10 col-xl-6">
-            <div class="p-3">
-              <h1 class="text-white display-3 landing-headline">NEED INSPIRATION? <br>WE HAVE A CATALOG <br>FOR YOU.</h1> 
-              <a href="../Images/home-images/landing-bg.png" download="image-file" target="_blank"><button type="button" class="btn btn-primary btn-lg mt-5 px-5 custom-button">DOWNLOAD NOW</button></a>
+        <div class="row align-items-center justify-content-end container-padding">
+        <div class="col-lg-10 col-xl-6">
+            <div class="p-3 verbiage">
+              <h1 class="text-white display-3 landing-headline">Be Inspired.</h1> 
+              <a href="Files/Chaparral_Re-Brand_Catalog-US_2022_No Crop Marks.pdf" download="image-file" target="_blank"><button type="button" class="btn btn-primary btn-lg mt-5 px-5 custom-button">DOWNLOAD CATALOG</button></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section-->
+  </section>
 
 
-  <footer>
-    <section name="footer">
-      <div class="container-fluid justify-content-around container-padding footer-bg">   
-          <div class="row w-100" style="padding-left:24px;">
-            <div class="col-md-4 p-pad-2">
-              <p class="text-white text-md-start p-pad-1 ms-md-5 ps-md-5">
-                  <b>Chaparral</b>  <br>
-                  501 Kettering Drive <br>
-                  Ontario, California 91761 <br>
-                   <br><br>
-                  Copyright © 2023 
-              </p>
-            </div>
-  
-            <div class="col-md-4 footer-container-border">
-              <p class="text-white text-md-start p-pad-1 ms-lg-5 ps-lg-5">
-                <a href="tel:+1 888 244 1734">1 888 244 1734</a> 
+    <footer>
+	<section name="footer">
+    <div class="container-fluid justify-content-around py-5 footer-bg">   
+        <div class="row w-100 mt-md-5" style="padding-left:24px;">
+          <div class="col-md-4 p-pad-2">
+            <p class="text-white text-md-start p-pad-1 ms-md-5 ps-md-5">
+                <b>ABOUT US</b>  <br><br>                
+                We are a premier manufacturer <br>
+                of custom-made, top-tier closet <br>
+                doors and mirror products.  Our <br>
+                products cater to the distinct <br>
+                needs of the residential, multi-<br>
+                family, and mixed-use markets.
                 <br><br>
-                <a href="mailto:orderdesk@chaparraldoors.com">orderdesk@chaparraldoors.com</a>
-                  <br><br>
-                  chaparraldoors.com
-              </p>
-            </div>
-  
-            <div class="col-md-4 footer-container-border">
-              <p class="text-white text-md-start p-pad-1 ms-lg-5 ps-lg-5">
-                <a href="https://app.termly.io/document/privacy-policy/e134cc35-dd30-42ff-8a30-aa1c9525e4f0" target="_blank" style="color:#fff;">Privacy Policy</a>
+                We are Made in the USA.
+                <br><br><br><br>
+                <a href="#"><span class="montserrat social" style="font-weight: 600;">FACEBOOK</span></a><br><br>
+                  <a href="#"><span class="montserrat social" style="font-weight: 600;">INSTAGRAM</span></a><br><br>
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <p class="text-white text-md-start p-pad-1 ms-lg-5 ps-lg-5">
+              <b>WHERE WE'RE AT</b>  <br><br>
+              <a href="tel:+1 888 244 1734">1 888 244 1734</a> 
+              <br><br>
+              <a href="mailto:orderdesk@chaparraldoors.com">orderdesk@chaparraldoors.com</a>
                 <br><br>
-                <a href="https://app.termly.io/document/terms-of-service/9647600e-bab6-4882-a447-16b3dd60261f" target="_blank" style="color:#fff;">Terms and Conditions</a>
-                <br><br>
-                <a href="https://app.termly.io/document/acceptable-use/8088d9ea-d9be-4a54-b5cd-e1786da11f1e" target="_blank" style="color:#fff;">Acceptable Use Policy</a>    
-              </p>
-           </div>
-          </div>        
-      </div>
-      
-    </section>
-  </footer>
+                501 Kettering Drive<br>
+                Ontario CA 91761<br><br>
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <p class="text-white text-md-start p-pad-1 ms-lg-5 ps-lg-5">
+              <b>HOW WE DO THINGS</b>  <br><br>
+              <a href="https://app.termly.io/document/privacy-policy/e134cc35-dd30-42ff-8a30-aa1c9525e4f0" target="_blank" style="color:#fff;">Privacy Policy</a>
+              <br><br>
+              <a href="https://app.termly.io/document/terms-of-service/9647600e-bab6-4882-a447-16b3dd60261f" target="_blank" style="color:#fff;">Terms and Conditions</a>
+              <br><br>
+              <a href="https://app.termly.io/document/acceptable-use/8088d9ea-d9be-4a54-b5cd-e1786da11f1e" target="_blank" style="color:#fff;">Acceptable Use Policy</a>    
+            <br><br><br><br><br><br><br>
+            Copyright © 2023            
+            </p>
+         </div>
+        </div>        
+    </div>
+		
+  </section>
+</footer>
         
         
         

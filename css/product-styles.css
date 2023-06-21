@@ -4,10 +4,15 @@
   margin-bottom:1px;
 }
 .f-8{
-  font-size:8px;
+  font-size:10px;
   margin-bottom:5px;
   line-height: 1;
 }
+
+.b-0{
+  border-radius:0px !important;
+}
+
 .product-tab{
   background-color: #F5F5F5 !important;
   color: #000000 !important;
@@ -18,7 +23,7 @@
 
 @media screen and (max-width:300px){
   .nav-pills .nav-link{
-    width:auto;
+    width:200px;
   }
 }
 
@@ -75,16 +80,18 @@
 .product-height{
   height: 700px;
 }
+
 .product-height-2{
   height:850px;
 }
+
 @media screen and (max-width: 767px){
   .product-height{
     height: 150px;
   }
   .product-height-2{
-    height: 150px;
-  }
+  height:150px;
+}
 }
 .options-btn{
   border:none;
@@ -97,6 +104,14 @@
   color: #ffffff;
 }
 
+#topBtn{
+  border:none;
+  background-color: #313C87;
+  color: #ffffff;
+}
+#topBtn:hover{
+  background-color: #B5A60B;
+}
 /*CONTEMPORARY*/
 .contemporary-1{
   position:relative;
@@ -110,7 +125,7 @@
 
 .contemporary-2{
   position:relative;
-  background-image: url('../Images/products-img/contemporary/700 Series Wide Framed Wood Mirror _ White2.jpg');
+  background-image: url('../Images/products-img/contemporary/700\ SERIES\ WHITE\ NEW_MIRROR.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -229,7 +244,7 @@
 /*TRADITIONAL*/
 .trad-100{
   position:relative;
-  background-image: url('../Images/products-img/traditional/100 SERIES.png');
+  background-image: url('../Images/products-img/traditional/100\ SERIES_FINAL.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;

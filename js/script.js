@@ -14,8 +14,7 @@ $(document).ready(function() {
   
   $(window).on('load',function(){
     var hash = window.location.hash.substr(1);
-    
-  
+
 //tab-redirection    
     if(hash === "contemporary-tab"){        
       $("#contemporary-tab").trigger("click");
@@ -41,7 +40,6 @@ $(document).ready(function() {
     };
 });
 
-//validate recaptcha
 function validateRecaptcha() {
   var response = grecaptcha.getResponse();
   if (response.length === 0) {
@@ -54,39 +52,54 @@ function validateRecaptcha() {
     $("#myAlert").css("display", "");
   }
 }
-
-
-
-// Alert
-function showAlert(){
-  
+    
+//Alert
+  function showAlert(){
   if($("#myAlert").find("div#myAlert2").length==0){
     $("#myAlert").append("<div class='alert alert-success alert-dismissible fade show' id='myAlert2' role='alert'><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>Success! message sent successfully.</div>");
   }
   $("#myAlert").css("display", "");
 }
 
-  
-  
+//to Top 
+function topFunction() {
+  if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
+    document.documentElement.style.scrollBehavior = "smooth";
+    document.body.style.scrollBehavior = "smooth";
+  }
 
-// For printing images
-    function ImagetoPrint(source)
-    {
-        return "<html><head><title>Chaparral - Products</title><scri"+"pt>function step1(){\n" +
-                "setTimeout('step2()', 10);}\n" +
-                "function step2(){window.print();window.close()}\n" +
-                "</scri" + "pt></head><body onload='step1()'>\n" +
-                "<img src='" + source + "' /></body></html>";
-    }
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 
-    function PrintImage(source)
-    {
-        var Pagelink = "Chaparral-Products";
-        var pwa = window.open(Pagelink, "_new");
-        pwa.document.open();
-        pwa.document.write(ImagetoPrint(source));
-        pwa.document.close();
-    }
+  // Reset scroll behavior after scrolling
+  setTimeout(function() {
+    document.documentElement.style.scrollBehavior = "auto";
+    document.body.style.scrollBehavior = "auto";
+  }, 1000); // Adjust the timeout duration as needed
+}
+
+
+// For printing images code
+function ImagetoPrint(source) {
+  return "<html><head><title>Chaparral - Products</title>" +
+    "<style>" +
+    "img.responsive-image { max-width: 100%; height: auto; }" +
+    "</style>" +
+    "<scri"+"pt>function step1(){\n" +
+    "setTimeout('step2()', 10);}\n" +
+    "function step2(){window.print();window.close()}\n" +
+    "</scri" + "pt></head><body onload='step1()'>\n" +
+    "<img class='responsive-image' src='" + source + "' /></body></html>";
+}
+
+function PrintImage(source) {
+  var Pagelink = "Chaparral-Products";
+  var pwa = window.open(Pagelink, "_new");
+  pwa.document.open();
+  pwa.document.write(ImagetoPrint(source));
+  pwa.document.close();
+}
+
 
 
 //Banners Functions on product page
@@ -156,6 +169,3 @@ function showAlert(){
       }
     }
 
-
-
- 

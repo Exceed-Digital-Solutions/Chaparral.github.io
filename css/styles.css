@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@400;500;700&family=Overpass:wght@400;500;600;700&family=Poppins:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+
+
 @font-face {
     font-family: 'Poppins';
     src: url('.Fonts/Poppins-Bold.ttf') format('truetype');
@@ -14,7 +16,12 @@
     font-family: 'Noto Sans';
     src: url('path/to/NotoSans-Regular.ttf') format('truetype');
   }
-
+  
+ @font-face {
+    font-family: 'Century Gothic';
+    src: url('fonts/Century-Gothic-Regular.ttf') format('truetype');
+  }
+  
   @font-face {
     font-family: 'Mr Eaves XL';
     src: url('../Fonts/FontsFree-Net-MrEavesXLModOT-Reg.ttf');
@@ -29,13 +36,6 @@ html,body
       font-family: 'Mr Eaves XL';
       
   }
-@media screen and (min-width: 576px){
-  .video-size{
-    max-width: 720px;
-    height: 405px;
-  }
- 
-}
   
 /*COLORS*/
 .color1{
@@ -57,7 +57,7 @@ html,body
 }
 
 .bg-color3{
-  background-color: #B5A60B !important;
+  background-color: #B5A60B;
 }
 
 .color4{
@@ -83,10 +83,12 @@ html,body
 
 /*FONTS*/
 .century{
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
 }
+
 .montserrat{
   font-family: 'Montserrat';
+  color: #000 !important;
 }
 .montserrat-700{
   font-family: 'Montserrat';
@@ -133,12 +135,13 @@ html,body
 .overpass{
   font-family: 'Overpass';
 }
+
 .overpass-700{
   font-family: 'Overpass';
   font-weight:700;
 }
 .fw-500{
-  font-weight: 500;
+    font-weight: 500;
 }
 
 .underline{
@@ -147,6 +150,8 @@ html,body
   text-decoration-color:#B5A60B;
   text-decoration-thickness: 1px;
 }
+
+
 /*FONTS END*/
 
 .letter-space-3{
@@ -181,7 +186,6 @@ a{
 }
 /*Navigation Bar*/
 .navbar{
-  height: 120px;
   padding: 0em 1em 0em 1em;
 }
 
@@ -209,8 +213,8 @@ ul.navbar-nav{
   height: 3px;
   width: 0%;
   left: 0;
-  bottom: 0px;
-  transition-duration: .5s;
+  bottom: -5px;
+  transition-duration: .3s;
 }
 
 .navbar-nav li.active a::after {
@@ -230,17 +234,33 @@ ul.navbar-nav{
 }
 
 .nav-color{
-  color:white !important;
+  color:#000000 !important;
 }
 
 ul.navbar-nav{
   background-color: transparent;
 }
 
-.nav-shadow{
-  text-shadow: 0px 0px 10px rgba(0,0,0,.8);
+@media (max-width: 500px){
+  a.navbar-brand img{
+    max-width: 200px !important;
+    margin-left: -10px;
+  }
+  .navbar-toggler {
+    font-size: 1rem;
 }
+}
+
 @media (max-width: 991px){
+  .navbar {
+    padding: 0em 1em 0em 0em;
+}
+
+  iframe{
+    width: 100% !important;
+    height: 360px !important;
+  }
+
   .nav-link:hover::after {
     width: 50% !important;
   }
@@ -253,6 +273,7 @@ ul.navbar-nav{
 }
   a.navbar-brand img{ 
   width: 100% !important;
+  max-width: 250px;
 }
   .navbar{
   height: 150px;
@@ -260,11 +281,12 @@ ul.navbar-nav{
 
 .nav-color{
   color: rgba(0,0,0,.7) !important;
-}
+} 
 
 a.nav-shadow{
   text-shadow:none;
 }
+
 }
 
 .navbar-nav .nav-link:hover::after {
@@ -290,16 +312,29 @@ a.nav-shadow{
 
 .logo-bg{
   background-color: transparent;
-  margin-top: -20px;
+  margin-top: 0px;
   padding: 5%;
 }
 
 .nav-fs{
-font-size:14px !important;
+font-size: 15px !important;
 }
 
+.fs-50{
+  font-size:50px;
+}
+@media screen and (max-width:400px){
+  .fs-50{
+    font-size:32px;
+  }
+}
 
-
+.number{
+  color:black;
+}
+.number:hover{
+  color:#313C87;
+}
 /*Navigation Bar END*/
 
 
@@ -348,19 +383,24 @@ font-size:14px !important;
     color: #ffffff;
     letter-spacing: 2px;
 }
-
 .btn-primary:hover{
   background-color: #B5A60B;
   border: solid 1px #B5A60B;
-
 }
-.parent-btn:hover > .btn-primary{
+.btn-primary-2{
+  background-color: transparent;
+  border: solid 1px #B5A60B !important;
+  color:#b5a60b;
+}
+.parent-btn:hover > .btn-primary-2{
   background-color: #B5A60B;
   border: solid 1px #B5A60B;
-
+  color:white;
 }
 .parent-btn:hover > .arrow-btn{
-  background-color: #313C87 !important;
+  background-color: transparent !important;
+  color: #B5A60B !important;
+  border: solid 1px #B5A60B !important;
 }
 .btn-radius{
   border-radius: 10px 0px 0px 10px;
@@ -368,8 +408,8 @@ font-size:14px !important;
 .btn-radius-2{
   border-radius: 0px 10px 10px 0px;
 }
+
 .landing-headline{
-  
   font-weight:600;
 }
   @media (max-width: 576px) { /* Extra small devices (phones) */
@@ -392,8 +432,34 @@ font-size:14px !important;
     height:850px !important;
   }
 }
+
+.landing-bg1 {
+  background-image: url('../Images/products-img/framed-wall-mirrors/WHITE-WHITE.jpg');
+  background-size: cover;
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  padding:10%;
+  z-index: 12;
+  height: auto;
+}
+
+.verbiage{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+@media (max-width: 991px) {
+  .verbiage{
+  align-items: center;
+  }
+  .container-padding{
+  padding: 0px 0px !important;
+  }
+}
+
 .landing-bg {
-    background-image: url('../Images/home-images/landing-bg.png');
+    background-image: url('../Images/products-img/traditional/650\ Series.jpg');
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
@@ -403,7 +469,7 @@ font-size:14px !important;
   }
 
   .landing-bg-2{
-    background-image: url('../Images/carousel/550\ SERIES.jpg');
+    background-image: url('../Images/carousel/550_SERIES.jpg');
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
@@ -412,8 +478,8 @@ font-size:14px !important;
     height: auto;
   }
   
-  .landing-bg-3{
-    background-image: url('../Images/carousel/500\ Series_FINAL.jpg');
+   .landing-bg-3{
+    background-image: url('../Images/carousel/700\ Series\ Wide\ Framed\ Wood\ Mirror\ _\ Black.jpg');
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
@@ -440,7 +506,7 @@ font-size:14px !important;
     height: auto;
   }
   .landing-bg-6{
-    background-image: url('../Images/carousel/100\ SERIES.png');
+    background-image: url('../Images/carousel/500\ Series_FINAL.jpg');
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
@@ -449,7 +515,7 @@ font-size:14px !important;
     height: auto;
   }
   .landing-bg-7{
-    background-image: url('../Images/products-img/traditional/650\ Series.jpg');
+    background-image: url('../Images/carousel/FERROSA\ PEWTER\ 2.jpg');
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
@@ -458,7 +524,7 @@ font-size:14px !important;
     height: auto;
   }
   .landing-bg-8{
-    background-image: url('../Images/carousel/FERROSA\ PEWTER\ 2.jpg');
+    background-image: url('../Images/carousel/100\ SERIES.png');
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
@@ -478,7 +544,7 @@ font-size:14px !important;
   }
 
   .landing-bg-10{
-    background-image: url('../Images/carousel/700\ Series\ Wide\ Framed\ Wood\ Mirror\ _\ Black.jpg');
+    background-image: url('../Images/products-img/framed-wall-mirrors/FRAMERICA\ STAINLESS\ WHITE.jpg');
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
@@ -487,7 +553,7 @@ font-size:14px !important;
     height: auto;
   }
   .landing-bg-11{
-    background-image: url('../Images/carousel/ARQADIA\ BRIGHT\ SILVER\ 2.jpg');
+    background-image: url('../Images/products-img/contemporary/GARDEN\ TEAK_2\ PANEL_POLAR\ WHITE_3\ LITE_IN\ USE.jpg');
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
@@ -495,6 +561,116 @@ font-size:14px !important;
     z-index: 12;
     height: auto;
   }
+  @media screen and (max-width:767px){
+  .landing-bg{
+    background-image: url('../Images/carousel/MOBILE CAROUSEL IMAGES - RESIZED/Mobile\ Carousel\ Homepage.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+  .landing-bg-2{
+    background-image: url('../Images/carousel/MOBILE CAROUSEL IMAGES - RESIZED/Mobile Carousel Image 1.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+
+  .landing-bg-3{
+    background-image: url('../Images/carousel/MOBILE CAROUSEL IMAGES - RESIZED/Mobile Carousel Image 2.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+
+  .landing-bg-4{
+    background-image: url('../Images/carousel/MOBILE CAROUSEL IMAGES - RESIZED/Mobile Carousel Image 3.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+
+  .landing-bg-5{
+    background-image: url('../Images/carousel/MOBILE CAROUSEL IMAGES - RESIZED/Mobile Carousel Image 4.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+
+  .landing-bg-6{
+    background-image: url('../Images/carousel/MOBILE CAROUSEL IMAGES - RESIZED/Mobile Carousel Image 5.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+
+  .landing-bg-7{
+    background-image: url('../Images/carousel/MOBILE CAROUSEL IMAGES - RESIZED/Mobile Carousel Image 6.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+
+  .landing-bg-8{
+    background-image: url('../Images/carousel/MOBILE CAROUSEL IMAGES - RESIZED/Mobile Carousel Image 7.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+
+  .landing-bg-9{
+    background-image: url('../Images/carousel/MOBILE CAROUSEL IMAGES - RESIZED/Mobile Carousel Image 8.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+
+  .landing-bg-10{
+    background-image: url('../Images/carousel/MOBILE CAROUSEL IMAGES - RESIZED/Mobile Carousel Image 9.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+
+  .landing-bg-11{
+    background-image: url('../Images/carousel/MOBILE CAROUSEL IMAGES - RESIZED/Mobile Carousel Image 10.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    padding:10%;
+    z-index: 12;
+    height: auto;
+  }
+}  
 .about-us-bg{
     background-image: url('../Images/about-us-img/about-us-bg.png');
     background-size: cover;
@@ -509,7 +685,13 @@ font-size:14px !important;
   font-size: 48px;
 }  
 
-
+@media screen and (min-width: 576px){
+  .video-size{
+    max-width: 720px;
+    height: 405px;
+  }
+ 
+}
 
 .material-symbols-rounded {
   font-variation-settings:
@@ -562,39 +744,45 @@ font-size:14px !important;
   
 }
 
-@media screen and (max-width:767px){
-  .resources-bg{
-    height: 30vh !important;
-  }
-  
+@media screen and (min-width: 1350px) {
+.paddingtop{
+  margin-top: 140px !important;
+}
 }
 
 .resources-height{
-  height:175vh;
+  height:100vh;
 }
 
 .resources-img{
   width: 40%;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:992px){
   .resources-height{
-    height:215vh;
     margin-top:25%;
   }
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:991px){
   .resources-height{
     height:auto;
-    margin-top:10%;
+    font-size: 40px;
   }
 
+  .resources-bg{
+    height: 30vh !important;
+  }
+  
   .resources-img{
     width:100% !important;
   }
-}
+  
+  .paddingtop{
+    margin-top: -80px !important;
+  }
 
+}
 
 .accordion-ml{
   margin-left:3%;
@@ -607,6 +795,9 @@ font-size:14px !important;
   padding: 65px 0px;
 }
 
+.container-padding-2{
+  padding: 65px 0px;
+}
 .border-gold{
  
   border-bottom: 1px solid #B5A60B !important;
@@ -837,7 +1028,7 @@ font-size:14px !important;
     border-width: 1px;
     border-color: #ffffff;
  }
-
+ 
  @media (max-width:767px){
   .footer-container-border{
     
@@ -845,7 +1036,8 @@ font-size:14px !important;
     
  }
  }
-.p-pad-2{
+ 
+ .p-pad-2{
   padding-left:5%;
 } 
 
@@ -858,7 +1050,11 @@ font-size:14px !important;
 p > a {
   color:white;
 }
+
+.social{
+  color:white!important;
+}
+.social:hover{
+  color:#B5A60B!important;
+}
 /*FOOTER END*/
-
-/*recaptcha*/
-
