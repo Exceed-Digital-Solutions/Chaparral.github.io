@@ -12,6 +12,7 @@
 .b-0{
   border-radius:0px !important;
 }
+
 .product-tab{
   background-color: #F5F5F5 !important;
   color: #000000 !important;
@@ -79,16 +80,18 @@
 .product-height{
   height: 700px;
 }
+
 .product-height-2{
   height:850px;
 }
+
 @media screen and (max-width: 767px){
   .product-height{
     height: 150px;
   }
   .product-height-2{
-    height: 150px;
-  }
+  height:150px;
+}
 }
 .options-btn{
   border:none;
@@ -100,6 +103,7 @@
   background-color: #313C87;
   color: #ffffff;
 }
+
 #topBtn{
   border:none;
   background-color: #313C87;
