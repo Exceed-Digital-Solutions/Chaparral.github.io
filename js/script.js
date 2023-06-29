@@ -48,8 +48,12 @@ function validateRecaptcha() {
   } else {
     if($("#myAlert").find("div#myAlert2").length==0){
       $("#myAlert").append("<div class='alert alert-success alert-dismissible fade show' id='myAlert2' role='alert'><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>Success! message sent successfully.</div>");
+      var form = document.getElementById("form1");
+      form.reset();
     }
     $("#myAlert").css("display", "");
+    var form = document.getElementById("form1");
+    form.reset();
   }
 }
     
