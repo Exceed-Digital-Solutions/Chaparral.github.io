@@ -52,7 +52,7 @@ function validateRecaptcha() {
       form.reset();
     }
     $("#myAlert").css("display", "");
-    var form = document.getElementById("form1");
+    var form = document.getElementById("message");
     form.reset();
   }
 }
